@@ -36,3 +36,135 @@
     transform: rotate(360deg);
   }
 }
+
+:root {
+  /* Color */
+  --color-sage-green: #4c7654a8;
+  --color-light-green: #95b46a;
+  --color-dark-green: #415d43;
+
+  --color-light-brown: #A08974;
+  --color-medium-brown: #5e503f;
+
+  --color-periwinkle: #c6d4ff;
+  --color-lavendar: #E2D7F8;
+  --color-white-grey: #ebf2fa;
+  --color-dark-grey: #1C1C1C;
+
+  /* Font size */
+  --font-large: 80px;
+  --font-medium: 60px;
+  --font-regular: 40px;
+  --font-small: 24px;
+  --font-body: 12px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  /* --size-border-radius: 4px; */
+
+  /* Animation */
+  /* --animation-duration: 300ms; */
+}
+
+/* #root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+} */
+
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-dark-grey);
+  margin: 16px 0;
+  /* font-family: "LoveloBlack"; */
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-dark-grey);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-dark-grey);
+  margin: 4px 0;
+}
+
+/* Navbar */
+.navbar {
+  padding: 0.5em;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-sage-green);
+  position: -webkit-sticky;
+  position: sticky;
+  /* top: -5px; */
+  z-index: 2;
+  box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 12%);
+}
+
+/* .navbar button {
+  background-color: transparent;
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: var(--weight-bold);
+  font-family: "LoveloBlack";
+} */
+
+.navbarMenu {
+  height: 100%;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2em;
+  /* font-family: "LoveloBlack"; */
+}
+
+.navbarItem {
+  color: var(--color-white-grey);
+  text-decoration: none;
+  font-weight: var(--weight-bold);
+  font-size: 1rem;
+  /* font-family: "LoveloBlack"; */
+}
+
+.navbarItem:hover {
+  color: var(--color-dark-green);
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+/* .comingSoon {
+  display: flex;
+  justify-content: center;
+} */
+
+.dropdownMenu button {
+  font-weight: var(--weight-bold);
+  background-color: transparent !important;
+  border: transparent !important;
+}
+
+.logoImageWrapper {
+  flex-grow: 2;
+  margin: 0 2em;
+}
+  
+.logoImage {
+  height: 64px;
+}
+
+/* navbar end */

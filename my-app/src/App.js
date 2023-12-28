@@ -4,17 +4,18 @@ import Home from './pages/Home';
 import Background from './pages/Background';
 import Projects from './pages/Projects';
 import Hobbies from './pages/Hobbies';
+import logo from './matcha_line_art.png';
 
 function App() {
   return (
     <BrowserRouter>
       <nav className="navbar">
-        {/* <div className="logoImageWrapper">
+        <div className="logoImageWrapper">
           <Link to="/"> <img src={logo} alt="logo" className="logoImage" /> </Link>
-        </div> */}
+        </div>
         
         <div className="navbarMenu">
-          <NavLink to="/" className="navbarItem"> Home </NavLink>
+          {/* <NavLink to="/" className="navbarItem"> Home </NavLink> */}
           <NavLink to="/background" className="navbarItem"> Background </NavLink>
           <NavLink to="/projects" className="navbarItem"> Projects </NavLink>
           <NavLink to="/hobbies" className="navbarItem"> Hobbies </NavLink>
