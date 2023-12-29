@@ -2,46 +2,56 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    /* justify-content: center; */
-    padding: 10% 10%;
+    justify-content: center;
+    padding: 5% 10%;
     /* position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0px; */
     background-color: var(--color-sage-green);
+    /* text-align: justify; */
+}
+
+.subContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0;
     text-align: justify;
 }
 
 .textImagePair {
     display: flex;
     flex-flow: row nowrap;
-    align-items: flex-start;
-    column-gap: 100px;
-    padding: 20px;
-}
-
-.ecTitle {
-
-}
-
-.ecContainer {
-    display: flex;
-    padding: 40px;
-    width: 100%;
-    flex-flow: row wrap;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: center; */
+    column-gap: 100px;
+    /* padding: 20px; */
+}
+
+.ecCardContainer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;        /* rows align from top */
+    justify-content: center;
+    padding: 40px 0 0;
+    width: 100%;
 }
 
 .ecCard {
     display: flex;
     flex-flow: column wrap;
-    align-items: flex-start;
-    text-align: left;
-    /* padding: 10px; */
-    /* border: 10px;
-    border-color: black; */
-    width: 30%;
-    /* height: 100%; */
+    align-items: center;        /* center items on each row */
+    text-align: center;
+    padding: 15px;
+    width: 45vh;
+    /* height: 33%; */
+}
+
+.ecImage {
+    border-radius: 50%;
+    width: 30vh;
+    height: 30vh;
 }

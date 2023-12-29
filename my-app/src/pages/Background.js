@@ -1,18 +1,26 @@
 import '../App.css';
 import './Background.css'
-// import { NavLink } from "react-router-dom";
-// import { Fragment } from 'react';
+import { Link } from "react-router-dom";
 import logo from '.././matcha_line_art.png';
-import { Fragment } from 'react';
+import acaallday from '../logos/acaallday.png';
+import acabruins from '../logos/acabruins.png';
+import bc from '../logos/bc.png';
+import be from '../logos/bruin_entrepreneurs.png';
+import fc from '../logos/fc.png';
+import lahacks from '../logos/lahacks.png';
+import swe from '../logos/swe.png';
+import tt from '../logos/tt.png';
+import upe from '../logos/upe.png';
 
 function Background() {
   return (
-    <Fragment>
-      <div className='backgroundContainer'>
-        <h1> BACKGROUND </h1>
+    <div className='backgroundContainer'>
+
+      <div className='subContainer'>
+        <h1> ABOUT ME </h1>
 
         <div className='textImagePair'>
-          <img src={logo} alt="logo" className="logo"/>
+          <img src={logo} alt="logo" className="ecImage"/>
           <p> Hi, I'm Kelly Yu! I'm a programmer, designer, and dancer who innovates for an impact. </p>
         </div>
 
@@ -21,97 +29,103 @@ function Background() {
               Through morning routines like gratitude journaling, I've come to appreciate mindfulness.
               Through dance, I've learned to value a safe and collaborative learning space for anyone to explore outside their comfort zone.
               My goal is to integrate my passions into crafting new technology that elevates and empowers my community.</p>
-          <img src={logo} alt="logo" className="logo"/>
+          <img src={logo} alt="logo" className="ecImage"/>
         </div>
 
         <div className='textImagePair'>
-          <img src={logo} alt="logo" className="logo"/>
+          <img src={logo} alt="logo" className="ecImage"/>
           <p>I have experience in mobile and web development, UI/UX design, and data science.
               Check out my projects! If you think we'd be a good mutual fit,
               I'd love to connect and learn about your open opportunities.</p>
         </div>
-
-        {/* <div className='textImagePair'>
-          <img src={logo} alt="logo" className="logo"/>
-          <div>
-            <p> Hi, I'm Kelly Yu! I'm a programmer, designer, and dancer who innovates for an impact. </p>
-            <br></br>
-            <p> I'm very passionate about mental wellness and dance, as they both have shaped the person I aspire to become.
-              Through morning routines like gratitude journaling, I've come to appreciate mindfulness.
-              Through dance, I've learned to value a safe and collaborative learning space for anyone to explore outside their comfort zone.
-              My goal is to integrate my passions into crafting new technology that elevates and empowers my community.</p>
-            <br></br>
-            <p>I have experience in mobile and web development, UI/UX design, and data science.
-              Check out my projects! If you think we'd be a good mutual fit,
-              I'd love to connect and learn about your open opportunities.</p>
-          </div>
-        </div> */}
-
       </div>
 
-      <div className='backgroundContainer'>
+      {/* <div className='subContainer'>
+        <h2> Connect with me! </h2>
+        <p> Resume </p>
+      </div> */}
+
+      <div className='subContainer'>
         <h2> EXTRACURRICULARS </h2>
         <p> <i> how I like to balance work with fun :) </i> </p>
 
-        <div className='ecContainer'>
+        <div className='ecCardContainer'>
           <div className='ecCard'>
-            <img src={logo} alt="logo" className="logo"/>
-            <p> THETA TAU - PROFESSIONAL ENGINEERING FRATERNITY </p>
+            <Link to='https://www.thetataubruins.org/' target='_blank'>
+              <img src={tt} alt="Theta Tau logo" className='ecImage'/>
+            </Link>
+            <p> <b> THETA TAU - PROFESSIONAL ENGINEERING FRATERNITY </b> </p>
             <p> WEBMASTER </p>
           </div>
 
           <div className='ecCard'>
-            <img src={logo} alt="logo" className="logo"/>
-            <p> UCLA SOCIETY OF WOMEN ENGINEERS </p>
+            <Link to='https://www.sweucla.com/' target='_blank'>
+              <img src={swe} alt="SWE at UCLA logo" className='ecImage'/>
+            </Link>
+            <p> <b> SOCIETY OF WOMEN ENGINEERS </b> </p>
             <p> MENTOR </p>
           </div>
 
           <div className='ecCard'>
-            <img src={logo} alt="logo" className="logo"/>
-            <p> UCLA UPSILON PI EPSILON HONOR SOCIETY </p>
+            <Link to='https://upe.seas.ucla.edu/' target='_blank'>
+              <img src={upe} alt="Upsilon Pi Epsilon logo" className='ecImage'/>
+            </Link>
+            <p> <b> UCLA UPSILON PI EPSILON HONOR SOCIETY </b> </p>
             <p> TUTOR </p>
           </div>
           
           <div className='ecCard'>
-            <img src={logo} alt="logo" className="logo"/>
-            <p> THETA TAU - PROFESSIONAL ENGINEERING FRATERNITY </p>
-            <p> WEBMASTER </p>
+            <Link to='https://www.instagram.com/acaallday/' target='_blank'>
+              <img src={acaallday} alt="ACA All Day logo" className='ecImage'/>
+            </Link>
+            <p> <b> ACA ALL DAY COLLEGIATE COMPETITIVE DANCE TEAM </b> </p>
+            <p> DANCER </p>
           </div>
 
           <div className='ecCard'>
-            <img src={logo} alt="logo" className="logo"/>
-            <p> UCLA SOCIETY OF WOMEN ENGINEERS </p>
-            <p> MENTOR </p>
+            <Link to='https://www.instagram.com/foundationschoreo/' target='_blank'>
+              <img src={fc} alt="Foundations Choreography logo" className='ecImage'/>
+            </Link>
+            <p> <b> FOUNDATIONS CHOREOGRAPHY</b> </p>
+            <p> VIDEOGRAPHER </p>
           </div>
 
           <div className='ecCard'>
-            <img src={logo} alt="logo" className="logo"/>
-            <p> UCLA UPSILON PI EPSILON HONOR SOCIETY </p>
-            <p> TUTOR </p>
+            <Link to='https://bruincreators.wixsite.com/home' target='_blank'>
+              <img src={bc} alt="Bruin Creators logo" className='ecImage'/>
+            </Link>
+            <p> <b> BRUIN CREATORS </b> </p>
+            <p> MARKETING DIRECTOR & GRAPHIC DESIGNER </p>
           </div>
 
           <div className='ecCard'>
-            <img src={logo} alt="logo" className="logo"/>
-            <p> THETA TAU - PROFESSIONAL ENGINEERING FRATERNITY </p>
-            <p> WEBMASTER </p>
+            <Link to='https://acabruins.org/' target='_blank'>
+              <img src={acabruins} alt="ACA Bruins logo" className='ecImage'/>
+            </Link>
+            <p> <b> ASSOCIATION OF CHINESE AMERICANS </b> </p>
+            <p> FINANCE INTERN </p>
           </div>
 
           <div className='ecCard'>
-            <img src={logo} alt="logo" className="logo"/>
-            <p> UCLA SOCIETY OF WOMEN ENGINEERS </p>
-            <p> MENTOR </p>
+            <Link to='https://www.instagram.com/lahacks/' target='_blank'>
+              <img src={lahacks} alt="LA Hacks logo" className='ecImage'/>
+            </Link>
+            <p> <b> LA HACKS </b> </p>
+            <p> HACKATHON COMPETITOR </p>
           </div>
 
           <div className='ecCard'>
-            <img src={logo} alt="logo" className="logo"/>
-            <p> UCLA UPSILON PI EPSILON HONOR SOCIETY </p>
-            <p> TUTOR </p>
+            <Link to='https://designathon2023.bruinentrepreneurs.org/' target ='_blank'>
+              <img src={be} alt="Bruin Entrepreneurs logo" className='ecImage'/>
+            </Link>
+            <p> <b> BRUIN ENTREPRENEURS </b> </p>
+            <p> DESIGNATHON COMPETITOR </p>
           </div>
 
         </div>
-
       </div>
-    </Fragment>
+
+    </div>
   );
 }
 
