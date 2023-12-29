@@ -10,8 +10,8 @@ function App() {
   return (
     <BrowserRouter>
       <nav className="navbar">
-        <div className="logoImageWrapper">
-          <Link to="/"> <img src={logo} alt="logo" className="logoImage" /> </Link>
+        <div className="logoWrapper">
+          <Link to="/"> <img src={logo} alt="logo" className="logo" /> </Link>
         </div>
         
         <div className="navbarMenu">
@@ -23,7 +23,7 @@ function App() {
       </nav>
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home/>} />
         <Route path="/background" element={<Background/>} />
         <Route path="/projects" element={<Projects/>} />
         <Route path="/hobbies" element={<Hobbies/>} />

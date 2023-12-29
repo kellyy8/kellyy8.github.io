@@ -80,7 +80,7 @@
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
-  color: var(--color-dark-grey);
+  color: var(--color-white-grey);
   margin: 16px 0;
   /* font-family: "LoveloBlack"; */
 }
@@ -88,14 +88,14 @@ h1 {
 h2 {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
-  color: var(--color-dark-grey);
+  color: var(--color-white-grey);
   margin: 8px 0;
 }
 
 p {
   font-size: var(--font-regular);
   font-weight: var(--font-regular);
-  color: var(--color-dark-grey);
+  color: var(--color-white-grey);
   margin: 4px 0;
 }
 
@@ -158,12 +158,12 @@ p {
   border: transparent !important;
 }
 
-.logoImageWrapper {
+.logoWrapper {
   flex-grow: 2;
   margin: 0 2em;
 }
   
-.logoImage {
+.logo {
   height: 64px;
 }
 
