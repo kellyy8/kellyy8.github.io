@@ -1,0 +1,47 @@
+.backgroundContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 10% 10%;
+    /* position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px; */
+    background-color: var(--color-sage-green);
+    text-align: justify;
+}
+
+.textImagePair {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    column-gap: 100px;
+    padding: 20px;
+}
+
+.ecTitle {
+
+}
+
+.ecContainer {
+    display: flex;
+    padding: 40px;
+    width: 100%;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ecCard {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    text-align: left;
+    /* padding: 10px; */
+    /* border: 10px;
+    border-color: black; */
+    width: 30%;
+    /* height: 100%; */
+}

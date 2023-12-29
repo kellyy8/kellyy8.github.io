@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <nav className="navbar">
         <div className="logoWrapper">
-          <Link to="/"> <img src={logo} alt="logo" className="logo" /> </Link>
+          <Link to="/"> <img src={logo} alt="logo" className="logo"/> </Link>
         </div>
         
         <div className="navbarMenu">
