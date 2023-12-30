@@ -1,0 +1,84 @@
+.baseContainer {
+    background-color: var(--color-sage-green);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    /* max-width: 100%;
+    max-height: 100%; */
+}
+
+.filterMenu{
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 100px;
+    padding: 5%;
+}
+
+.filterItem {
+    /* background-color: var(--color-white-grey); */
+    /* border */
+    border-color: var(--color-white-grey);
+    border-style: solid;
+    border-width: medium;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+
+    /* text */
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-white-grey);
+}
+
+.filterItem:hover {
+    background-color: var(--color-light-brown);
+    /* color: var(--color-dark-green); */
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.cardContainer {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.projectCard {
+    /* border-style: solid; */
+    display: flex;
+    flex-flow: column wrap;
+    width: 40vh;
+    margin: 10px;
+}
+
+.projectImage {
+    width: 25vh;
+    height: 25vh;
+    align-self: center;
+}
+
+.projectDescription{
+    display: flex;
+    flex-flow: row wrap;
+    /* align-items: flex-start; */
+    justify-content: left;
+    padding: 5px 10px;
+    /* border-style: solid; */
+    column-gap: 20px;
+}
+
+.projectText{
+    font-size: var(--font-body);
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-white-grey);
+}
+
+.projectTitle {
+
+}
+
+.projectType {
+
+}
+
+.projectTools {
+
+}
