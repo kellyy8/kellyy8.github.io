@@ -22,13 +22,36 @@
     text-align: justify;
 }
 
+/* .quote {
+    font-size: var(--font-normal);
+} */
+
+.contactContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 100px;
+}
+
+.contact {
+    border-color: var(--color-white-grey);
+    border-style: solid;
+    border-width: medium;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.contact:hover {
+    background-color: var(--color-sage-green);
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
 .textImagePair {
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
-    /* justify-content: center; */
+    align-items: center;            /* center along vertical cross axis */
     column-gap: 100px;
-    /* padding: 20px; */
 }
 
 .ecCardContainer {

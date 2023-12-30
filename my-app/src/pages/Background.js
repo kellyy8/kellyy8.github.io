@@ -18,7 +18,10 @@ function Background() {
 
       <div className='subContainer'>
         <h1> ABOUT ME </h1>
-
+        <p> <i> “You do not just wake up and become the butterfly. Growth is a process.” </i> </p>
+        <p> <i> ― Rupi Kaur, the sun and her flowers </i> </p>
+        <br/>
+      
         <div className='textImagePair'>
           <img src={logo} alt="logo" className="ecImage"/>
           <p> Hi, I'm Kelly Yu! I'm a programmer, designer, and dancer who innovates for an impact. </p>
@@ -40,13 +43,16 @@ function Background() {
         </div>
       </div>
 
-      {/* <div className='subContainer'>
-        <h2> Connect with me! </h2>
-        <p> Resume </p>
-      </div> */}
+      <div className='contactContainer'>
+        <Link to="https://www.linkedin.com/in/kelly-yu-b46406169/" target='_blank' className='contact'> <p> LinkedIn </p> </Link>
+        <Link to="https://github.com/kellyy8" target='_blank' className='contact'> <p> GitHub </p> </Link>
+        <Link to="https://tinyurl.com/Kelly-Yu-Design-Portfolio" target='_blank' className='contact'> <p> Design Portfolio </p> </Link>
+        <Link to="https://drive.google.com/file/d/1orvztnH9H8pOzlOZmCHQPckka54y0jJv/view?usp=sharing" target='_blank' className='contact'> <p> Resume </p> </Link>
+        {/* <a href='../Kelly_Yu_Resume.pdf' target='_blank' className='contact'> <p> Resume </p> </a> */}
+      </div>
 
       <div className='subContainer'>
-        <h2> EXTRACURRICULARS </h2>
+        <h1> EXTRACURRICULARS </h1>
         <p> <i> how I like to balance work with fun :) </i> </p>
 
         <div className='ecCardContainer'>
