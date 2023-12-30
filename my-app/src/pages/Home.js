@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 
 function Home() {
   return (
-    <div className='baseContainer'>
+    <div className='Home'>
       <div className='introContainer'>
         <div className='introName'> KELLY YU </div>
         <div className='introIntro'> A programmer, designer, and dancer </div>

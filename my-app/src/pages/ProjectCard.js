@@ -6,7 +6,7 @@ export default function ProjectCard({num, image, title, type, tools}){
         <div className='projectCard'>
             <img src={image} alt={image} className='projectImage'></img>
             <div className="projectDescription">
-                <p> {num} -- </p>
+                <p> <b> {num}- </b> </p>
                 <div>
                     <div className='projectText'> {title} </div>
                     <div className='projectText'> {type} </div>

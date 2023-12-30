@@ -14,7 +14,7 @@ import upe from '../logos/upe.png';
 
 function Background() {
   return (
-    <div className='backgroundContainer'>
+    <div className='Background'>
 
       <div className='subContainer'>
         <h1> ABOUT ME </h1>

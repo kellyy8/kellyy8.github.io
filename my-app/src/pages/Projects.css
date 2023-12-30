@@ -1,10 +1,12 @@
-.baseContainer {
+.Projects {
     background-color: var(--color-sage-green);
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    /* max-width: 100%;
-    max-height: 100%; */
+    padding: 5% 10%;
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    /* position: relative; */
 }
 
 .filterMenu{
@@ -15,23 +17,23 @@
 }
 
 .filterItem {
-    /* background-color: var(--color-white-grey); */
     /* border */
     border-color: var(--color-white-grey);
     border-style: solid;
     border-width: medium;
-    border-radius: 1em;
-    padding: 0.5em 1em;
+    border-radius: 2em;
+    padding: 0.25em 0.75em;
 
     /* text */
     text-align: center;
     text-decoration: none;
-    color: var(--color-white-grey);
+    /* color: var(--color-white-grey); */
+    /* font-size: var(--font-normal); */
+    font-weight: var(--weight-bold);
 }
 
 .filterItem:hover {
-    background-color: var(--color-light-brown);
-    /* color: var(--color-dark-green); */
+    background-color: var(--color-sage-green);
     transition: 0.3s ease-out;
     cursor: pointer;
 }
@@ -39,13 +41,15 @@
 .cardContainer {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 
 .projectCard {
     /* border-style: solid; */
     display: flex;
-    flex-flow: column wrap;
-    width: 40vh;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    width: 45vh;
     margin: 10px;
 }
 
@@ -57,17 +61,16 @@
 
 .projectDescription{
     display: flex;
-    flex-flow: row wrap;
-    /* align-items: flex-start; */
+    flex-flow: row nowrap;
     justify-content: left;
-    padding: 5px 10px;
-    /* border-style: solid; */
-    column-gap: 20px;
+    padding: 5px;
+    column-gap: 5px;
 }
 
 .projectText{
-    font-size: var(--font-body);
-    font-weight: var(--weight-semi-bold);
+    flex-flow: row wrap;
+    font-size: var(--font-normal);
+    font-weight: var(--weight-bold);
     color: var(--color-white-grey);
 }
 
