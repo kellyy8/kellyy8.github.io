@@ -20,8 +20,8 @@ function Home() {
 
       <div className='linksContainer'>
         {/* <Link to='/'> <img src={figma} className='linksImage'></img> </Link> */}
-        <Link to='https://github.com/kellyy8'> <img src={github} className='linksImage'></img> </Link>
-        <Link to='https://www.linkedin.com/in/kelly-yu-b46406169/'> <img src={linkedin} className='linksImage'></img> </Link>
+        <Link to='https://github.com/kellyy8' target='_blank'> <img src={github} className='linksImage'></img> </Link>
+        <Link to='https://www.linkedin.com/in/kelly-yu-b46406169/' target='_blank'> <img src={linkedin} className='linksImage'></img> </Link>
       </div>
     </div>
 );
