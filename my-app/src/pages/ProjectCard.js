@@ -8,9 +8,9 @@ export default function ProjectCard({num, image, title, type, tools}){
             <div className="projectDescription">
                 <p> <b> {num}- </b> </p>
                 <div>
-                    <div className='projectText'> {title} </div>
-                    <div className='projectText'> {type} </div>
-                    <div className='projectText'> {tools} </div>
+                    <div className='projectTitle'> {title} </div>
+                    {/* <div className='projectText'> {type} </div> */}
+                    <div className='projectTools'> {tools} </div>
                 </div>
             </div>
         </div>
