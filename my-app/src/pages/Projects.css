@@ -16,7 +16,7 @@
     padding: 5%;
 }
 
-.filterItem {
+.filterButton {
     /* border */
     border-color: var(--color-white-grey);
     border-style: solid;
@@ -32,7 +32,11 @@
     font-weight: var(--weight-bold);
 }
 
-.filterItem:hover {
+/* .filterButton.active {
+    background-color: var(--color-sage-green);
+} */
+
+.filterButton:hover {
     background-color: var(--color-sage-green);
     transition: 0.3s ease-out;
     cursor: pointer;
@@ -56,7 +60,7 @@
 .projectImage {
     border-style: solid;
     border-color: var(--color-white-grey);
-    border-radius: 20%;
+    border-radius: 10%;
     /* width: 30vh; */
     height: 30vh;
     align-items: center;

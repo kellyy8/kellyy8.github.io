@@ -1,6 +1,6 @@
 import '../App.css';
 import './Home.css';
-import figma from '../logos/figma.png'
+// import figma from '../logos/figma.png'
 import linkedin from '../logos/linkedin.png'
 import github from '../logos/github.png'
 import { Link } from 'react-router-dom'
@@ -20,8 +20,8 @@ function Home() {
 
       <div className='linksContainer'>
         {/* <Link to='/'> <img src={figma} className='linksImage'></img> </Link> */}
-        <Link to='https://github.com/kellyy8' target='_blank'> <img src={github} className='linksImage'></img> </Link>
-        <Link to='https://www.linkedin.com/in/kelly-yu-b46406169/' target='_blank'> <img src={linkedin} className='linksImage'></img> </Link>
+        <Link to='https://github.com/kellyy8' target='_blank'> <img src={github} alt='GitHub logo' className='linksImage'></img> </Link>
+        <Link to='https://www.linkedin.com/in/kelly-yu-b46406169/' target='_blank'> <img src={linkedin} alt='LinkedIn logo' className='linksImage'></img> </Link>
       </div>
     </div>
 );
