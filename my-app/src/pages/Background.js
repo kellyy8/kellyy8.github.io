@@ -61,7 +61,7 @@ function Background() {
               <img src={tt} alt="Theta Tau logo" className='ecImage'/>
             </Link>
             <p> <b> THETA TAU - PROFESSIONAL ENGINEERING FRATERNITY </b> </p>
-            <p> WEBMASTER </p>
+            <p> Webmaster </p>
           </div>
 
           <div className='ecCard'>
@@ -69,7 +69,7 @@ function Background() {
               <img src={swe} alt="SWE at UCLA logo" className='ecImage'/>
             </Link>
             <p> <b> SOCIETY OF WOMEN ENGINEERS </b> </p>
-            <p> MENTOR </p>
+            <p> Mentor </p>
           </div>
 
           <div className='ecCard'>
@@ -77,7 +77,7 @@ function Background() {
               <img src={upe} alt="Upsilon Pi Epsilon logo" className='ecImage'/>
             </Link>
             <p> <b> UCLA UPSILON PI EPSILON HONOR SOCIETY </b> </p>
-            <p> TUTOR </p>
+            <p> Tutor </p>
           </div>
           
           <div className='ecCard'>
@@ -85,7 +85,7 @@ function Background() {
               <img src={acaallday} alt="ACA All Day logo" className='ecImage'/>
             </Link>
             <p> <b> ACA ALL DAY COLLEGIATE COMPETITIVE DANCE TEAM </b> </p>
-            <p> DANCER </p>
+            <p> Dancer </p>
           </div>
 
           <div className='ecCard'>
@@ -93,7 +93,7 @@ function Background() {
               <img src={fc} alt="Foundations Choreography logo" className='ecImage'/>
             </Link>
             <p> <b> FOUNDATIONS CHOREOGRAPHY</b> </p>
-            <p> VIDEOGRAPHER </p>
+            <p> Videographer </p>
           </div>
 
           <div className='ecCard'>
@@ -101,7 +101,7 @@ function Background() {
               <img src={bc} alt="Bruin Creators logo" className='ecImage'/>
             </Link>
             <p> <b> BRUIN CREATORS </b> </p>
-            <p> MARKETING DIRECTOR & GRAPHIC DESIGNER </p>
+            <p> Marketing Director & Graphic Designer </p>
           </div>
 
           <div className='ecCard'>
@@ -109,7 +109,7 @@ function Background() {
               <img src={acabruins} alt="ACA Bruins logo" className='ecImage'/>
             </Link>
             <p> <b> ASSOCIATION OF CHINESE AMERICANS </b> </p>
-            <p> FINANCE INTERN </p>
+            <p> Finance Intern </p>
           </div>
 
           <div className='ecCard'>
@@ -117,7 +117,7 @@ function Background() {
               <img src={lahacks} alt="LA Hacks logo" className='ecImage'/>
             </Link>
             <p> <b> LA HACKS </b> </p>
-            <p> HACKATHON COMPETITOR </p>
+            <p> Hackathon Competitor </p>
           </div>
 
           <div className='ecCard'>
@@ -125,7 +125,7 @@ function Background() {
               <img src={be} alt="Bruin Entrepreneurs logo" className='ecImage'/>
             </Link>
             <p> <b> BRUIN ENTREPRENEURS </b> </p>
-            <p> DESIGNATHON COMPETITOR </p>
+            <p> Designathon Competitor </p>
           </div>
 
         </div>
