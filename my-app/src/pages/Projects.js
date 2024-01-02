@@ -13,7 +13,7 @@ function Display({displayItems, handleOpen}) {
       {/* Use each 'item' data to populate each project's image and description. */}
       {displayItems.map((card, i) =>{
         return <div className='projectCard'>
-            <Link onClick={() => {handleOpen(); num=i;}}>
+            <Link onClick={() => {handleOpen(); num=card.id-1;}}>
               <img src={card.image} alt={card.image} className='projectImage'></img>
             </Link>
 
@@ -43,7 +43,7 @@ function FilterButton({allCategories, filter}) {
 }
 
 function Projects() {
-  const allCategories = ['All', 'Software Development', 'UI/UX Design', 'Data Analytics'];
+  const allCategories = ['All', 'Software Development', 'UI/UX Design', 'Data Analysis'];
   const [displayItem, setDisplayItem] = useState(items);            /* initializes menu with all items */
 
   const filter = (category) =>{

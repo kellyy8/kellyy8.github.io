@@ -15,7 +15,7 @@ function Home() {
       <div className='introContainer'>
         <div className='introName'> KELLY YU </div>
         <div className='introIntro'> A programmer, designer, and dancer </div>
-        <div className='introIntro'> innovating for an impact. </div>
+        <div className='introIntro'> innovating for an impact. ♡ </div>
       </div>
 
       <div className='linksContainer'>

@@ -12,6 +12,11 @@ import swe from '../logos/swe.png';
 import tt from '../logos/tt.png';
 import upe from '../logos/upe.png';
 
+import webDev from '../web_dev.png'
+import headshot from '../headshot.jpg'
+import dance from '../dance.png'
+
+
 function Background() {
   return (
     <div className='Background'>
@@ -23,7 +28,7 @@ function Background() {
         <br/>
       
         <div className='textImagePair'>
-          <img src={logo} alt="logo" className="ecImage"/>
+          <img src={headshot} alt="Kelly Yu's headshot." className="headshot"/>
           <p> Hi, I'm Kelly Yu! I'm a programmer, designer, and dancer who innovates for an impact. </p>
         </div>
 
@@ -32,11 +37,11 @@ function Background() {
               Through morning routines like gratitude journaling, I've come to appreciate mindfulness.
               Through dance, I've learned to value a safe and collaborative learning space for anyone to explore outside their comfort zone.
               My goal is to integrate my passions into crafting new technology that elevates and empowers my community.</p>
-          <img src={logo} alt="logo" className="ecImage"/>
+          <img src={dance} alt="Ballerina dancing." className="dance"/>
         </div>
 
         <div className='textImagePair'>
-          <img src={logo} alt="logo" className="ecImage"/>
+          <img src={webDev} alt="Coding symbols." className="webdev"/>
           <p>I have experience in mobile and web development, UI/UX design, and data science.
               Check out my projects! If you think we'd be a good mutual fit,
               I'd love to connect and learn about your open opportunities.</p>

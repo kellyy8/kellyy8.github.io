@@ -78,3 +78,19 @@
     width: 25vh;
     height: 25vh;
 }
+
+.headshot {
+    border-radius: 50%;
+    width: 25vh;
+    height: 25vh;
+}
+
+.dance {
+    width: 30vh;
+    height: 30vh;
+}
+
+.webdev {
+    width: 30vh;
+    height: 30vh;
+}
