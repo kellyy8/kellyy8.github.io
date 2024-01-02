@@ -17,6 +17,7 @@ const items = [
         subcategory: 'Mobile Development',
         image: PocketStudio,
         title: 'Pocket Studio',
+        role: 'Co-Lead Frontend Mobile Developer',
         tools: 'Swift, Figma, Git',
         description: 'A Swift iOS mobile app that uses infinite zoom art and storytelling to promote mental wellness and creativity.',
         // links: [{Figma: 'Figma'}, {GitHub: 'GitHub'}, {Demo: 'Demo'}],

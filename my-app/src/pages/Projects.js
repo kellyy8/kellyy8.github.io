@@ -3,23 +3,7 @@ import './Projects.css'
 import items from './ProjectData';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
-
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-// import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-
-const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
-    padding: 4,
-};
 
 var num = 0;
 
@@ -32,20 +16,6 @@ function Display({displayItems, handleOpen}) {
             <Link onClick={() => {handleOpen(); num=i;}}>
               <img src={card.image} alt={card.image} className='projectImage'></img>
             </Link>
-
-            {/* <DisplayInfo show={modalShow} onHide={() => setModalShow(false)}/> */}
-
-            {/* <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-            >
-                <Box sx={style}>
-                    <div className='modalTitle'> Text in a modal </div>
-                    <div className='modalDescription'> Duis mollis, est non commodo luctus, nisi erat porttitor ligula. </div>
-                </Box>
-            </Modal> */}
 
             <div className='projectDescription'>
                 <p> <b> {i+1}- </b> </p>
@@ -106,18 +76,33 @@ function Projects() {
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
         >
-            <Box sx={style}>
+            <div className='projectModalBox'>
+              <Link onClick={handleClose} className='closeButton'> X </Link>
+
+              <div>
+                <img src={items[num].image} alt={items[num].image} className='projectImage'></img>
+              </div>
+
+              <div>
                 <div className='modalTitle'> {items[num].title} </div>
-                <div className='modalDescription'> {items[num].description} </div>
+                <div className='modalContent'> <div style={{width: '100px'}}> <b> Role: </b> </div> <div style={{width: "400px"}}> {items[num].role} </div> </div>
+                <div className='modalContent'> <div style={{width: '100px'}}> <b> Tools: </b> </div> <div style={{width: "400px"}}> {items[num].tools} </div> </div>
+                <div className='modalContent'> <div style={{width: '100px'}}> <b> Overview: </b> </div> <div style={{width: "400px"}}> {items[num].description} </div> </div>
 
-                {items[num].links.map((link) => {
-                    return <div> 
-                        <Link to={link[1]} target='_blank' style={{textDecoration: 'none'}}> {link[0]} </Link>
-                    </div>
-                })}
+                <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+                  <div className='modalContent' style={{width: '100px'}}> <b> More Info: </b> </div>
+                  <div style={{display: 'flex', flexFlow: 'row', columnGap: '20px'}}>
+                    {items[num].links.map((link) => {
+                        return <div> 
+                            <Link to={link[1]} target='_blank' className='linkButton'> {link[0]} </Link>
+                        </div>
+                    })}
+                  </div>
+                </div>
 
-                <Button onClick={handleClose}> Close </Button>
-            </Box>
+              </div>
+
+            </div>
 
         </Modal>
 
