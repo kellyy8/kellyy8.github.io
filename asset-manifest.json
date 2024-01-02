@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.15fb7384.css",
-    "main.js": "/static/js/main.70b2ce1f.js",
+    "main.css": "/static/css/main.7c52b786.css",
+    "main.js": "/static/js/main.fb7c87cb.js",
     "static/js/787.d4aba7ab.chunk.js": "/static/js/787.d4aba7ab.chunk.js",
     "static/media/bruin_marketplace.png": "/static/media/bruin_marketplace.b7548a3f923c33a342f8.png",
     "static/media/super_peach_sisters.png": "/static/media/super_peach_sisters.4b8f18c746a4cda3af7d.png",
@@ -27,12 +27,12 @@
     "static/media/github.png": "/static/media/github.987334e9f782cc505f25.png",
     "static/media/linkedin.png": "/static/media/linkedin.0bfe02065a2fb223c54b.png",
     "index.html": "/index.html",
-    "main.15fb7384.css.map": "/static/css/main.15fb7384.css.map",
-    "main.70b2ce1f.js.map": "/static/js/main.70b2ce1f.js.map",
+    "main.7c52b786.css.map": "/static/css/main.7c52b786.css.map",
+    "main.fb7c87cb.js.map": "/static/js/main.fb7c87cb.js.map",
     "787.d4aba7ab.chunk.js.map": "/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.15fb7384.css",
-    "static/js/main.70b2ce1f.js"
+    "static/css/main.7c52b786.css",
+    "static/js/main.fb7c87cb.js"
   ]
 }
