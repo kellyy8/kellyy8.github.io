@@ -1,7 +1,11 @@
 import '../App.css';
 import './Background.css'
 import { Link } from "react-router-dom";
-import logo from '.././matcha_line_art.png';
+
+import webDev from '../web_dev.png'
+import headshot from '../headshot.jpg'
+import dance from '../dance.png'
+
 import acaallday from '../logos/acaallday.png';
 import acabruins from '../logos/acabruins.png';
 import bc from '../logos/bc.png';
@@ -11,11 +15,6 @@ import lahacks from '../logos/lahacks.png';
 import swe from '../logos/swe.png';
 import tt from '../logos/tt.png';
 import upe from '../logos/upe.png';
-
-import webDev from '../web_dev.png'
-import headshot from '../headshot.jpg'
-import dance from '../dance.png'
-
 
 function Background() {
   return (

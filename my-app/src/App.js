@@ -4,7 +4,6 @@ import Home from './pages/Home';
 import Background from './pages/Background';
 import Projects from './pages/Projects';
 import Hobbies from './pages/Hobbies';
-import logo from './matcha_line_art.png';
 import watermark from './watermark.png';
 
 function App() {
