@@ -17,7 +17,7 @@ const items = [
         subcategory: 'Mobile Development',
         image: PocketStudio,
         title: 'Pocket Studio',
-        role: 'Co-Lead Front-End Mobile Developer',
+        role: 'Co-Lead Full-Stack Mobile Developer',
         tools: 'Swift, Figma, Git',
         description: "A Swift iOS mobile application that uses infinite zoom art and storytelling to promote mental wellness and creativity. Mental wellness features include a mood tracker and a digital journal with prompts inspired by the main character's growth and self-discovery.",
         // links: [{Figma: 'Figma'}, {GitHub: 'GitHub'}, {Demo: 'Demo'}],
