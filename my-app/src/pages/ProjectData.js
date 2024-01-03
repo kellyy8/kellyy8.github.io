@@ -1,14 +1,14 @@
-import PocketStudio from '../logos/pocket_studio.png';
-import BruinPause from '../logos/bruin_pause.png';
-import BrewinHappiness from '../logos/brewin_happiness2.png';
-import BruinMarketplace from '../logos/bruin_marketplace.png';
-import Sigmax from '../logos/sigmax.png';
-import AugmentedReality from '../logos/augmented_reality.png';
-import WebBanner from '../logos/web_banner.png';
-import Chatbot from '../logos/chatbot.png';
-import TheHill from '../logos/the_hill.png';
-import OnTheDot from '../logos/on_the_dot.png';
-import SuperPeachSisters from '../logos/super_peach_sisters.png';
+import PocketStudio from '../logos_projects/pocket_studio.png';
+import BruinPause from '../logos_projects/bruin_pause.png';
+import BrewinHappiness from '../logos_projects/brewin_happiness2.png';
+import BruinMarketplace from '../logos_projects/bruin_marketplace.png';
+import Sigmax from '../logos_projects/sigmax.png';
+import AugmentedReality from '../logos_projects/augmented_reality.png';
+import WebBanner from '../logos_projects/web_banner.png';
+import Chatbot from '../logos_projects/chatbot.png';
+import TheHill from '../logos_projects/the_hill.png';
+import OnTheDot from '../logos_projects/on_the_dot.png';
+import SuperPeachSisters from '../logos_projects/super_peach_sisters.png';
 
 /* Expore an array of data about each project. */
 const items = [

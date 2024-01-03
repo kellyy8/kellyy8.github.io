@@ -4,6 +4,7 @@ import items from './ProjectData';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
 import Modal from '@mui/material/Modal';
+import FilterButton from './FilterButton';
 
 var num = 0;
 
@@ -27,17 +28,6 @@ function Display({displayItems, handleOpen}) {
             </div>
           </div>
       })}
-    </div>
-  )
-}
-
-function FilterButton({allCategories, filter}) {
-  return (
-    <div className='filterMenu'>
-        {/* Create a button for each category that calls the filter function when the button is clicked. */}
-        {allCategories.map((category) =>{ 
-          return <Link onClick={() => filter(category)} className='filterButton'> <p> {category} </p> </Link>
-        })}
     </div>
   )
 }

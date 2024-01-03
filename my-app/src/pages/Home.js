@@ -1,8 +1,8 @@
 import '../App.css';
 import './Home.css';
 // import figma from '../logos/figma.png'
-import linkedin from '../logos/linkedin.png'
-import github from '../logos/github.png'
+import linkedin from '../images/linkedin.png'
+import github from '../images/github.png'
 import { Link } from 'react-router-dom'
 
 // import { NavLink } from "react-router-dom";

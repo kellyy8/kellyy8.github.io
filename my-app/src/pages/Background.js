@@ -2,19 +2,19 @@ import '../App.css';
 import './Background.css'
 import { Link } from "react-router-dom";
 
-import webDev from '../web_dev.png'
-import headshot from '../headshot.jpg'
-import dance from '../dance.png'
+import webDev from '../images/web_dev.png'
+import headshot from '../images/headshot.jpg'
+import dance from '../images/dance.png'
 
-import acaallday from '../logos/acaallday.png';
-import acabruins from '../logos/acabruins.png';
-import bc from '../logos/bc.png';
-import be from '../logos/bruin_entrepreneurs.png';
-import fc from '../logos/fc.png';
-import lahacks from '../logos/lahacks.png';
-import swe from '../logos/swe.png';
-import tt from '../logos/tt.png';
-import upe from '../logos/upe.png';
+import acaallday from '../logos_ec/acaallday.png';
+import acabruins from '../logos_ec/acabruins.png';
+import bc from '../logos_ec/bc.png';
+import be from '../logos_ec/bruin_entrepreneurs.png';
+import fc from '../logos_ec/fc.png';
+import lahacks from '../logos_ec/lahacks.png';
+import swe from '../logos_ec/swe.png';
+import tt from '../logos_ec/tt.png';
+import upe from '../logos_ec/upe.png';
 
 function Background() {
   return (
@@ -28,7 +28,9 @@ function Background() {
       
         <div className='textImagePair'>
           <img src={headshot} alt="Kelly Yu's headshot." className="headshot"/>
-          <p> Hi, I'm Kelly Yu! I'm a programmer, designer, and dancer who innovates for an impact. </p>
+          <p> Hi, I'm Kelly Yu! I'm a programmer, designer, and dancer who innovates for an impact.
+            I'm a current senior studying Computer Science at UCLA. I will be graduating in December 2024
+            and I'm looking for full-time SWE roles/SWE internships starting in June 2024. </p>
         </div>
 
         <div className='textImagePair'>

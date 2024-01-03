@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import Background from './pages/Background';
 import Projects from './pages/Projects';
 import Hobbies from './pages/Hobbies';
-import watermark from './watermark.png';
+import watermark from './images/watermark.png';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           {/* <NavLink to="/" className="navbarItem"> Home </NavLink> */}
           <NavLink to="/background" className="navbarItem"> Background </NavLink>
           <NavLink to="/projects" className="navbarItem"> Projects </NavLink>
-          {/* <NavLink to="/hobbies" className="navbarItem"> Hobbies </NavLink> */}
+          <NavLink to="/hobbies" className="navbarItem"> Hobbies </NavLink>
         </div>
       </nav>
 
