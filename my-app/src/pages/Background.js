@@ -30,7 +30,7 @@ function Background() {
           <img src={headshot} alt="Kelly Yu's headshot." className="headshot"/>
           <p> Hi, I'm Kelly Yu! I'm a programmer, designer, and dancer who innovates for an impact.
             I'm a current senior studying Computer Science at UCLA. I will be graduating in December 2024
-            and I'm looking for full-time SWE roles/SWE internships starting in June 2024. </p>
+            and I'm looking for SWE internships starting in June 2024. </p>
         </div>
 
         <div className='textImagePair'>
