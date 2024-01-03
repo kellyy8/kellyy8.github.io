@@ -47,6 +47,7 @@ function DisplayVideo({displayItems, show}){
 
 
 function Hobbies() {
+  // const allCategories = [{name: 'Dance', selected: false}, {name: 'Graphic Design', selected: false}, {name: 'Videography', selected: false}];
   const allCategories = ['Dance', 'Graphic Design', 'Videography'];
   const [displayItem, setDisplayItem] = useState(items.filter(item => item.category === 'Dance'));            /* initializes menu with all items */
   const [video, setVideo] = useState(true);

@@ -33,8 +33,25 @@
     font-weight: var(--weight-bold);
 }
 
-/* .filterButton.active {
-    background-color: var(--color-sage-green);
+.filterButtonSelected {
+    /* border */
+    border-color: var(--color-white-grey);
+    border-style: solid;
+    border-width: medium;
+    border-radius: 2em;
+    padding: 0.25em 0.75em;
+    background-color: black;
+
+    /* text */
+    text-align: center;
+    text-decoration: none;
+    /* color: var(--color-white-grey); */
+    /* font-size: var(--font-normal); */
+    font-weight: var(--weight-bold);
+}
+
+/* .filterButton:active {
+    background-color: var(--color-medium-brown);
 } */
 
 .filterButton:hover {
