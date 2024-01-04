@@ -1,5 +1,5 @@
 import '../App.css';
-import './Projects.css';
+import './FilterButton.css';
 import { Link } from 'react-router-dom';
 
 // function MouseOver(event) {
@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 // }
 
 
-function FilterButton({allCategories, filter}) {
+function FilterButton({allCategories, filter, filterNum, setFilterNum}) {
     return (
       // <div className='filterMenu'>
       //     {/* Create a button for each category that calls the filter function when the button is clicked. */}
@@ -24,8 +24,8 @@ function FilterButton({allCategories, filter}) {
       // </div>
       <div className='filterMenu'>
           {/* Create a button for each category that calls the filter function when the button is clicked. */}
-          {allCategories.map((category) =>{ 
-            return <Link onClick={() => filter(category)} className='filterButton'> <p> {category} </p> </Link>
+          {allCategories.map((category, i) =>{ 
+            return <Link onClick={() => {filter(category); setFilterNum(i);}} className={(i === filterNum) ? 'filterButtonSelected' : 'filterButton'}> <p> {category} </p> </Link>
           })}
       </div>
       // <div className='filterMenu'>

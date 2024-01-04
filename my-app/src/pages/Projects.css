@@ -9,57 +9,6 @@
     /* position: relative; */
 }
 
-/* Filter Menu */
-.filterMenu{
-    display: flex;
-    flex-flow: row nowrap;
-    column-gap: 100px;
-    padding: 5%;
-}
-
-.filterButton {
-    /* border */
-    border-color: var(--color-white-grey);
-    border-style: solid;
-    border-width: medium;
-    border-radius: 2em;
-    padding: 0.25em 0.75em;
-
-    /* text */
-    text-align: center;
-    text-decoration: none;
-    /* color: var(--color-white-grey); */
-    /* font-size: var(--font-normal); */
-    font-weight: var(--weight-bold);
-}
-
-.filterButtonSelected {
-    /* border */
-    border-color: var(--color-white-grey);
-    border-style: solid;
-    border-width: medium;
-    border-radius: 2em;
-    padding: 0.25em 0.75em;
-    background-color: black;
-
-    /* text */
-    text-align: center;
-    text-decoration: none;
-    /* color: var(--color-white-grey); */
-    /* font-size: var(--font-normal); */
-    font-weight: var(--weight-bold);
-}
-
-/* .filterButton:active {
-    background-color: var(--color-medium-brown);
-} */
-
-.filterButton:hover {
-    background-color: var(--color-sage-green);
-    transition: 0.3s ease-out;
-    cursor: pointer;
-}
-
 /* Project Display */
 
 .cardContainer {

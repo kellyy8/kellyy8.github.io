@@ -1,8 +1,7 @@
 import '../App.css';
-import './Projects.css'
 import './Hobbies.css';
 import items from './HobbyData.js'
-import { useState} from 'react';
+import { useState } from 'react';
 import FilterButton from './FilterButton.js';
 
 function DisplayNonVideo({displayItems, show}) {
@@ -14,7 +13,7 @@ function DisplayNonVideo({displayItems, show}) {
       {displayItems.map((card, i) =>{
         return <div className='hobbyCard'>
             {/* <Link onClick={() => {handleOpen(); num=card.id-1;}}> */}
-              <img src={card.image} alt={card.image} className='projectImage'></img>
+              <img src={card.image} alt={card.image} className='hobbyImage'></img>
             {/* </Link> */}
               <div className='hobbyTitle'> {card.title} </div>
           </div>
@@ -51,6 +50,7 @@ function Hobbies() {
   const allCategories = ['Dance', 'Graphic Design', 'Videography'];
   const [displayItem, setDisplayItem] = useState(items.filter(item => item.category === 'Dance'));            /* initializes menu with all items */
   const [video, setVideo] = useState(true);
+  const [filterNum, setFilterNum] = useState(0);
 
   const filter = (category) =>{
     if(category === 'All'){
@@ -71,7 +71,7 @@ function Hobbies() {
         <h1> HOBBIES </h1>
         <p> some cool things i created with some really cool people :) </p>
 
-        <FilterButton allCategories={allCategories} filter={filter}/>
+        <FilterButton allCategories={allCategories} filter={filter} filterNum={filterNum} setFilterNum={setFilterNum}/>
         <DisplayNonVideo displayItems={displayItem} show={!video}/>
         <DisplayVideo displayItems={displayItem} show={video}/>
 

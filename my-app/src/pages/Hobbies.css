@@ -14,13 +14,13 @@
     margin: 10px 25px;
 }
 
-/* .hobbyImage {
+.hobbyImage {
     border-style: solid;
     border-color: var(--color-white-grey);
     border-radius: 10%;
     height: 30vh;
     align-items: center;
-} */
+}
 
 .hobbyTitle {
     text-align: center;

@@ -50,13 +50,15 @@ function Projects() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  const [filterNum, setFilterNum] = useState(0);
   
   return (
     <div className='Projects'>
         <h1> PROJECTS </h1>
-        <p> Here are some of my favorite projects I've worked on! </p>
+        <p> some fun projects i got to work on :) </p>
 
-        <FilterButton allCategories={allCategories} filter={filter}/>
+        <FilterButton allCategories={allCategories} filter={filter} filterNum={filterNum} setFilterNum={setFilterNum}/>
         <Display displayItems={displayItem} handleOpen={handleOpen}/>
 
         {/* Only display Modal when 'open' == true. */}
