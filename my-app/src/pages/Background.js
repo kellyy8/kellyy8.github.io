@@ -2,19 +2,19 @@ import '../App.css';
 import './Background.css'
 import { Link } from "react-router-dom";
 
-import webDev from '../images/web_dev.png'
-import headshot from '../images/headshot.jpg'
-import dance from '../images/dance.png'
+import webDev from '../images/other/web_dev.png'
+import headshot from '../images/other/headshot.jpg'
+import dance from '../images/other/dance.png'
 
-import acaallday from '../logos_ec/acaallday.png';
-import acabruins from '../logos_ec/acabruins.png';
-import bc from '../logos_ec/bc.png';
-import be from '../logos_ec/bruin_entrepreneurs.png';
-import fc from '../logos_ec/fc.png';
-import lahacks from '../logos_ec/lahacks.png';
-import swe from '../logos_ec/swe.png';
-import tt from '../logos_ec/tt.png';
-import upe from '../logos_ec/upe.png';
+import acaallday from '../images/logos_ec/acaallday.png';
+import acabruins from '../images/logos_ec/acabruins.png';
+import bc from '../images/logos_ec/bc.png';
+import be from '../images/logos_ec/bruin_entrepreneurs.png';
+import fc from '../images/logos_ec/fc.png';
+import lahacks from '../images/logos_ec/lahacks.png';
+import swe from '../images/logos_ec/swe.png';
+import tt from '../images/logos_ec/tt.png';
+import upe from '../images/logos_ec/upe.png';
 
 function Background() {
   return (

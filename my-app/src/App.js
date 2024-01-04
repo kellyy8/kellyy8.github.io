@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import Background from './pages/Background';
 import Projects from './pages/Projects';
 import Hobbies from './pages/Hobbies';
-import watermark from './images/watermark.png';
+import watermark from './images/other/watermark.png';
 
 function App() {
   return (
