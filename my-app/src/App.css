@@ -1,6 +1,7 @@
 :root {
   /* Color */
-  --color-sage-green: #4c7654a8;
+  --color-transparent-sage-green: #4c7654a8;
+  --color-sage-green: #85aa8c;
   --color-light-green: #95b46a;
   --color-dark-green: #415d43;
 
@@ -27,11 +28,11 @@
   --weight-extra-thin: 200;
 }
 
-/* #root {
+#root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-} */
+}
 
 /* Typography */
 h1 {
@@ -64,9 +65,9 @@ p {
   align-items: center;
   justify-content: space-between;
   background-color: var(--color-sage-green);
-  position: -webkit-sticky;
+  /* position: -webkit-sticky; */
   position: sticky;
-  /* top: -5px; */
+  top: -5px;
   z-index: 2;
   box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 12%);
 }
