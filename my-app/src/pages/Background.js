@@ -53,7 +53,7 @@ function Background() {
         <Link to="https://www.linkedin.com/in/kelly-yu-b46406169/" target='_blank' className='contact'> <p> LinkedIn </p> </Link>
         <Link to="https://github.com/kellyy8" target='_blank' className='contact'> <p> GitHub </p> </Link>
         <Link to="https://tinyurl.com/Kelly-Yu-Design-Portfolio" target='_blank' className='contact'> <p> Design Portfolio </p> </Link>
-        <Link to="https://drive.google.com/file/d/1oBKF5hSzLgqMtDFLiUfjBchWAVBSXjLL/view?usp=sharing" target='_blank' className='contact'> <p> Resume </p> </Link>
+        <Link to="https://drive.google.com/file/d/158jLeaJT1fa8tf8UZUalfJhs7MULxaah/view?usp=sharing" target='_blank' className='contact'> <p> Resume </p> </Link>
         {/* <a href='../Kelly_Yu_Resume.pdf' target='_blank' className='contact'> <p> Resume </p> </a> */}
       </div>
 
