@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.080033d0.css",
-    "main.js": "/static/js/main.caa8f47e.js",
+    "main.js": "/static/js/main.60a4c774.js",
     "static/js/787.d4aba7ab.chunk.js": "/static/js/787.d4aba7ab.chunk.js",
     "static/media/ar.png": "/static/media/ar.1bbf9eaa6de5c90dd4e5.png",
     "static/media/brewin_happiness.png": "/static/media/brewin_happiness.cdbc06633cd021b4dc68.png",
@@ -32,6 +32,7 @@
     "static/media/fc.png": "/static/media/fc.1eaafe39def313ba15c6.png",
     "static/media/chatbot.png": "/static/media/chatbot.5ec4408da0f0e9af4029.png",
     "static/media/dance.png": "/static/media/dance.be7d8819b56bf8a462aa.png",
+    "static/media/vital_motion.png": "/static/media/vital_motion.91d4ff74ef61687bd526.png",
     "static/media/acaallday.png": "/static/media/acaallday.494a195704d6ec787455.png",
     "static/media/acabruins.png": "/static/media/acabruins.4fe888ebf4873d1cbfb3.png",
     "static/media/the_hill.png": "/static/media/the_hill.808d744f646e610da0d6.png",
@@ -48,11 +49,11 @@
     "static/media/linkedin.png": "/static/media/linkedin.0bfe02065a2fb223c54b.png",
     "index.html": "/index.html",
     "main.080033d0.css.map": "/static/css/main.080033d0.css.map",
-    "main.caa8f47e.js.map": "/static/js/main.caa8f47e.js.map",
+    "main.60a4c774.js.map": "/static/js/main.60a4c774.js.map",
     "787.d4aba7ab.chunk.js.map": "/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.080033d0.css",
-    "static/js/main.caa8f47e.js"
+    "static/js/main.60a4c774.js"
   ]
 }
