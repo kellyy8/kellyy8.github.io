@@ -28,24 +28,35 @@ function Background() {
       
         <div className='textImagePair'>
           <img src={headshot} alt="Kelly Yu's headshot." className="headshot"/>
-          <p> Hi, I'm Kelly Yu! I'm a programmer, designer, and dancer who innovates for an impact.
-            I'm a current senior studying Computer Science at UCLA. I will be graduating in December 2024
-            and I'm looking for SWE internships starting in June 2024. </p>
+          <p>
+          Hi, I'm Kelly and I study Computer Science at UCLA!
+          I'm currently in between my Bachelor's and Master's degree (expected: June 2026) and I'm looking for opportunities this summer to innovate for an impact!
+          I love working on projects where I know the product I'm building will help my community grow with me.
+          </p>
+          {/* <p> Hi, I'm Kelly Yu! I'm a programmer, designer, and dancer who innovates for an impact.
+            I completed my Bachelor's in Computer Science at UCLA in December 2024. I will be returning to UCLA to complete my Master's in Computer Science this Fall 2025.
+            I'm seeking SWE internships for Summer 2025. </p> */}
         </div>
 
         <div className='textImagePair'>
-          <p> I'm very passionate about mental wellness and dance, as they both have shaped the person I aspire to become.
+          <p>
+          I'm especially interested in frontend/full stack web and mobile app development. I have experience with backend, like working with databases and APIs, but I really like collaborating with product designers to improve the user interface and user experience. I've worked on apps for areas like sustainability, politics, and physical therapy, but my favorite project would have to be Pocket Studio. I led a team of developers and collaborated with designers, illustrators, and writers to craft a Swift iOS app that encourages users to practice mindfulness through infinite zoom art and storytelling.
+          </p>
+          {/* <p> I'm very passionate about mental wellness and dance, as they both have shaped the person I aspire to become.
               Through morning routines like gratitude journaling, I've come to appreciate mindfulness.
               Through dance, I've learned to value a safe and collaborative learning space for anyone to explore outside their comfort zone.
-              My goal is to integrate my passions into crafting new technology that elevates and empowers my community.</p>
+              My goal is to integrate my passions into crafting new technology that elevates and empowers my community.</p> */}
           <img src={dance} alt="Ballerina dancing." className="dance"/>
         </div>
 
         <div className='textImagePair'>
           <img src={webDev} alt="Coding symbols." className="webdev"/>
-          <p>I have experience in mobile and web development, UI/UX design, and data science.
+          <p>
+          Aside from that, I love getting creative during my free time. I enjoy dancing, filmmaking, graphic designing, bulley journaling, and more. I love exploring different mediums to express myself and connect with the people around me.
+          </p>
+          {/* <p>I have experience in mobile and web development, UI/UX design, and data science.
               Check out my projects! If you think we'd be a good mutual fit,
-              I'd love to connect and learn about your open opportunities.</p>
+              I'd love to connect and learn about your open opportunities.</p> */}
         </div>
       </div>
 
@@ -59,7 +70,7 @@ function Background() {
 
       <div className='subContainer'>
         <h1> EXTRACURRICULARS </h1>
-        <p> <i> how I like to balance work with fun :) </i> </p>
+        <p> <i> how I balance work with fun :) </i> </p>
 
         <div className='ecCardContainer'>
           <div className='ecCard'>
