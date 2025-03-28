@@ -1,34 +1,51 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css"
+import largeTulip from "../src/assets/large_tulip.png"
+import { CiLinkedin } from "react-icons/ci"
+import { FaGithub, FaFigma } from "react-icons/fa"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div>
+      <h1>Hi, I'm Kelly!</h1>
+      <h2>I'm a software developer, designer, and dancer
+        <br/>
+        <span style={{fontStyle: "italic"}}>innovating for an impact.</span>
+        ♡
+      </h2>
+
+      <br/>
+      <br/>
+
+      <div className="links">
+        <div>
+          <img src={largeTulip} alt="Tulip." height="120"/>
+          <p className="text1">about me</p>
+        </div>
+        <div>
+          <img src={largeTulip} alt="Tulip." height="120"/>
+          <p className="text1">projects</p>
+        </div>
+        <div>
+          <img src={largeTulip} alt="Tulip." height="120"/>
+          <p className="text1">hobbies</p>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+
+      <br/>
+      <br/>
+
+      {/** Footer */}
+      <div className="footer-wrapper">
+        <div className="icons-wrapper">
+          <CiLinkedin size="2.5em"/>
+          <FaGithub size="2em"/>
+          <FaFigma size="2em"/>
+        </div>
+        <p className="text2">growth is a process</p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+    </div>
   )
 }
 
