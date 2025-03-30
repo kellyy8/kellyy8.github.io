@@ -2,6 +2,7 @@ import "./App.css"
 import largeTulip from "../src/assets/large_tulip.png"
 import { CiLinkedin } from "react-icons/ci"
 import { FaGithub, FaFigma } from "react-icons/fa"
+import Projects from "./Projects"
 
 function App() {
 
@@ -35,6 +36,11 @@ function App() {
       <br/>
       <br/>
 
+      <Projects/>
+      
+      <br/>
+      <br/>
+      
       {/** Footer */}
       <div className="footer-wrapper">
         <div className="icons-wrapper">
