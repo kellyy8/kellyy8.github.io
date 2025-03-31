@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div>
-      <h1>Hi, I'm Kelly!</h1>
+      {/* <h1>Hi, I'm Kelly!</h1>
       <h2>I'm a software developer, designer, and dancer
         <br/>
         <span style={{fontStyle: "italic"}}>innovating for an impact.</span>
@@ -34,13 +34,13 @@ function App() {
       </div>
 
       <br/>
-      <br/>
+      <br/> */}
 
       <Projects/>
       
       <br/>
       <br/>
-      
+
       {/** Footer */}
       <div className="footer-wrapper">
         <div className="icons-wrapper">

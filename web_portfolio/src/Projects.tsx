@@ -1,5 +1,21 @@
 import {useState} from "react"
 import "./Projects.css"
+import vm from "../src/assets/logos_projects/vital_motion.png"
+
+function ProjectCard() {
+    return(
+        <div className="project-wrapper">
+            <img src={vm} width="100%" height="auto"/>
+            <div className="project-details-wrapper">
+                <p className="text2">01</p>
+                <div className="project-details">
+                    <p className="text2">NAME</p>
+                    <p className="text3">TOOLS USED</p>
+                </div>
+            </div>
+        </div>
+    )
+}
 
 type Filter = "all" | "software development" | "ui/ux design" | "data analysis"
 
@@ -12,7 +28,7 @@ function Projects() {
     }
     
     return (
-        <div>
+        <div className="projects-container">
             <h1>Projects</h1>
             <p className="text2">some fun projects i got to work on :)</p>
 
@@ -26,6 +42,15 @@ function Projects() {
                         <p className="filter-button-text">{filter}</p>
                     </div>
                 )}
+            </div>
+
+            <div className="project-card-container">
+                <ProjectCard/>
+                <ProjectCard/> {/** TODO: Container expands depending on # of cards. Wrong! */}
+                <ProjectCard/>
+                <ProjectCard/>
+                <ProjectCard/>
+                <ProjectCard/>
             </div>
 
         </div>
