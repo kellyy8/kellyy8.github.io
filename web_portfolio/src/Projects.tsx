@@ -9,7 +9,7 @@ type ProjectCardProps = ProjectDetails & {
 function ProjectCard(props : ProjectCardProps) {
     return(
         <div className="project-wrapper">
-            <img src={props.image} width="100%" height="auto"/>
+            <img className="project-logo" src={props.image} width="100%" height="auto"/>
             <div className="project-details-wrapper">
                 <p className="text2">{props.number < 10 ? '0' : ''}{props.number}</p>
                 <div className="project-details">
@@ -27,8 +27,17 @@ function Projects() {
     const allFilters : Array<Filter> = ["all", "software development", "ui/ux design", "data analysis"]
     const [selectedFilter, setSelectedFilter] = useState<Filter>("all")
 
+    const [display, setDisplay] = useState<Array<ProjectDetails>>(projectData)
+
     const selectFilter = (filter : Filter) => {
         setSelectedFilter(filter)
+        if (filter === "all"){
+            setDisplay(projectData)
+        }
+        else{
+            const newDisplay = projectData.filter((pd) => pd.category.toLowerCase() === filter)
+            setDisplay(newDisplay)
+        }
     }
     
     return (
@@ -49,7 +58,7 @@ function Projects() {
             </div>
 
             <div className="project-card-container">
-                {projectData && projectData.map((pd, index) =>
+                {display && display.map((pd, index) =>
                     <ProjectCard key={index} number={index+1} {...pd}/>
                 )}
             </div>

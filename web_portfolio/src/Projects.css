@@ -57,6 +57,11 @@
     /* border: solid 1px var(--dark-green); */
 }
 
+.project-logo {
+    border-radius: 1em;
+    border: solid 2px var(--dark-green);
+}
+
 .project-details-wrapper {
     display: flex;
     flex-direction: row;
