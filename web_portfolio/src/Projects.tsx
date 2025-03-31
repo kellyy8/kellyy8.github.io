@@ -28,9 +28,9 @@ function Projects() {
     }
     
     return (
-        <div className="projects-container">
+        <div>
             <h1>Projects</h1>
-            <p className="text2">some fun projects i got to work on :)</p>
+            <p className="text2"><em>some fun projects i worked on :)</em></p>
 
             <div className="filter-panel">
                 {allFilters && allFilters.map((filter, index) => 
@@ -46,7 +46,7 @@ function Projects() {
 
             <div className="project-card-container">
                 <ProjectCard/>
-                <ProjectCard/> {/** TODO: Container expands depending on # of cards. Wrong! */}
+                <ProjectCard/>
                 <ProjectCard/>
                 <ProjectCard/>
                 <ProjectCard/>

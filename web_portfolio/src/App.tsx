@@ -2,23 +2,22 @@ import "./App.css"
 import largeTulip from "../src/assets/large_tulip.png"
 import { CiLinkedin } from "react-icons/ci"
 import { FaGithub, FaFigma } from "react-icons/fa"
-import Projects from "./Projects"
 
 function App() {
 
   return (
     <div>
-      {/* <h1>Hi, I'm Kelly!</h1>
+      <h1>Hi, I'm Kelly!</h1>
       <h2>I'm a software developer, designer, and dancer
         <br/>
-        <span style={{fontStyle: "italic"}}>innovating for an impact.</span>
+        <em>innovating for an impact.</em>
         ♡
       </h2>
 
       <br/>
       <br/>
 
-      <div className="links">
+      <div className="links-container">
         <div>
           <img src={largeTulip} alt="Tulip." height="120"/>
           <p className="text1">about me</p>
@@ -33,11 +32,6 @@ function App() {
         </div>
       </div>
 
-      <br/>
-      <br/> */}
-
-      <Projects/>
-      
       <br/>
       <br/>
 

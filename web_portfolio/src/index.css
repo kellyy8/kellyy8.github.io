@@ -32,7 +32,8 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  place-items: center;  /** Centers the items on the screen. Vertically and horizontally. **/
+  text-align: center;   /** Centers the text on the screen. **/
   min-width: 320px;
   min-height: 100vh;
 }
@@ -97,7 +98,9 @@ button:focus-visible {
   }
 } */
 
-.links {
+.links-container {
+  width: 60%;
+  justify-self: center;  /** Center links container horizontally across the screen. **/
   display: flex;
   justify-content: space-between;
 }
