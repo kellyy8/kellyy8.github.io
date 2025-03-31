@@ -1,16 +1,20 @@
 import {useState} from "react"
 import "./Projects.css"
-import vm from "../src/assets/logos_projects/vital_motion.png"
+import { projectData, ProjectDetails } from "./data"
 
-function ProjectCard() {
+type ProjectCardProps = ProjectDetails & {
+    number: number,
+}
+
+function ProjectCard(props : ProjectCardProps) {
     return(
         <div className="project-wrapper">
-            <img src={vm} width="100%" height="auto"/>
+            <img src={props.image} width="100%" height="auto"/>
             <div className="project-details-wrapper">
-                <p className="text2">01</p>
+                <p className="text2">{props.number < 10 ? '0' : ''}{props.number}</p>
                 <div className="project-details">
-                    <p className="text2">NAME</p>
-                    <p className="text3">TOOLS USED</p>
+                    <p className="text2">{props.title}</p>
+                    <p className="text3">{props.tools}</p>
                 </div>
             </div>
         </div>
@@ -45,12 +49,9 @@ function Projects() {
             </div>
 
             <div className="project-card-container">
-                <ProjectCard/>
-                <ProjectCard/>
-                <ProjectCard/>
-                <ProjectCard/>
-                <ProjectCard/>
-                <ProjectCard/>
+                {projectData && projectData.map((pd, index) =>
+                    <ProjectCard key={index} number={index+1} {...pd}/>
+                )}
             </div>
 
         </div>

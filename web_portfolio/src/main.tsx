@@ -7,6 +7,6 @@ import Projects from './Projects.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
-    {/* <Projects /> */}
+    <Projects />
   </StrictMode>,
 )
