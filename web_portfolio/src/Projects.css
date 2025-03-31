@@ -55,6 +55,12 @@
 .project-wrapper {
     width: 20%;
     /* border: solid 1px var(--dark-green); */
+    
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.025);
+    }
 }
 
 .project-logo {
