@@ -87,7 +87,7 @@ export const projectData : Array<ProjectDetails> = [
         category: 'UI/UX Design',
         subcategory: 'UI Design, Mobile Dev',
         image: OnTheDot,
-        title: 'RTX x GWC: On The Dot',
+        title: 'RTX x GWC: OTD',
         role: 'Front-End Web Developer, UI Designer',
         tools: 'Figma',
         description: "1 of 100 fellows selected to develop a “Give Back” project in teams of 4 using Agile and Scrum principles. 'On The Dot' is a web application prototype that accelerates event attendance tracking for college clubs, and supports first-year and transfer students with finding their communities and getting involved on campus.",
@@ -155,7 +155,7 @@ export const projectData : Array<ProjectDetails> = [
         image: BrewinHappiness,
         title: "Brewin' Happiness",
         role: 'Web Designer, Data Analyst',
-        tools: 'WordPress, Figma, Tableau, OpenRefine',
+        tools: 'Figma, Tableau, OpenRefine', // WordPress
         description: "With data visualization and analysis, 'Brewin' Happiness' explores how politics, technology, and wealth impact individual wellbeing. We used data from the World Happiness Report 2020 that was collected from 1,000 residents in each of the 153 selected countries.",
         links: [['Website', 'https://brewinhappiness.humspace.ucla.edu/']],
     }
