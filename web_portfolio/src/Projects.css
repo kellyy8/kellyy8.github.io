@@ -26,7 +26,8 @@
 }
 
 .filter-button-text {
-    line-height: 0;
+    margin: 0;
+    padding: 0.25em;
     font-weight: 800;
     font-size: 1em;
 
@@ -66,7 +67,7 @@
 
 .project-logo {
     border-radius: 1em;
-    border: solid 2px var(--dark-green);
+    border: solid 2px var(--sage-green);
 }
 
 .project-details-wrapper {
@@ -81,7 +82,7 @@
 }
 
 .number {
-    padding: 0 0.5em 0 0;
+    padding: 0 0.25em 0 0;
 }
 
 .project-details {
@@ -92,4 +93,56 @@
     & :is(.text2, .text3){
         text-align: right;
     }
+}
+
+.modal-wrapper {
+    position: relative;
+
+    width: 75%;
+    padding: 4em;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+    column-gap: 4em;
+
+    border: solid 2px var(--light-green);
+    border-radius: 1em;
+    background-color: var(--sage-green);
+    color: var(--white);
+}
+
+.modal-image {
+    border: solid 2px var(--light-green);
+    border-radius: 1em;
+}
+
+.modal-right {
+    text-align: left;
+}
+
+.modal-title {
+    text-align: center;
+}
+
+.modal-details-pair {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-details-label {
+    width: 100px;
+    font-weight: 800;
+}
+
+.modal-details-content {
+    flex: 1;
+    align-self: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1em;
+    right: 2em;
+    font-weight: 600;
 }
