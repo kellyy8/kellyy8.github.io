@@ -1,13 +1,11 @@
 import {useState} from "react"
-// import {Link} from "react-router-dom"
 import { projectData, ProjectDetails } from "./data"
 import "./Projects.css"
-import bh from "../src/assets/logos_projects/brewin_happiness.png"
 
 type ProjectCardProps = ProjectDetails & {
-    number: number,
-    handleShow?: React.ReactEventHandler,
-    handleClose?: React.ReactEventHandler,
+    number?: number,
+    handleShow?: any,
+    handleClose?: any,
 }
 
 function ProjectCard(props : ProjectCardProps) {
@@ -15,7 +13,7 @@ function ProjectCard(props : ProjectCardProps) {
         <div className="project-wrapper" onClick={props.handleShow}>
             <img className="project-logo" src={props.image} width="100%" height="auto"/>
             <div className="project-details-wrapper">
-                <p className="text1 number">{props.number < 10 ? '0' : ''}{props.number}</p>
+                <p className="text1 number">{props.number && props.number < 10 ? '0' : ''}{props.number}</p>
                 <div className="project-details">
                     <p className="text2">{props.title}</p>
                     <p className="text3">{props.tools}</p>
@@ -23,18 +21,6 @@ function ProjectCard(props : ProjectCardProps) {
             </div>
         </div>
     )
-}
-
-const sampleData = {
-    number: 0,
-    category: 'Data Analysis',
-    subcategory: 'n/a',
-    image: bh,
-    title: "Brewin' Happiness",
-    role: 'Web Designer, Data Analyst',
-    tools: 'Figma, Tableau, OpenRefine',
-    description: "With data visualization and analysis, 'Brewin' Happiness' explores how politics, technology, and wealth impact individual wellbeing. We used data from the World Happiness Report 2020 that was collected from 1,000 residents in each of the 153 selected countries.",
-    links: [['Website', 'https://brewinhappiness.humspace.ucla.edu/']],
 }
 
 function ProjectModal(props : ProjectCardProps) {
@@ -61,8 +47,12 @@ function ProjectModal(props : ProjectCardProps) {
                     <p className="modal-details-label">More Info:</p>
                     <div className="modal-details-content">
                         {/** TODO: Use Link element. */}
+                        {/** TODO: Space out the links. */}
                         {props.links && props.links.map((item, index) => 
-                            <a href={item[1]} key={index}>{item[0]}</a>
+                            <>
+                                <a href={item[1]} key={index}>{item[0]}</a>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            </>
                         )}
                     </div>
                 </div>
@@ -80,8 +70,15 @@ function Projects() {
     const [display, setDisplay] = useState<Array<ProjectDetails>>(projectData)
 
     const [show, setShow] = useState<boolean>(false)
-    const handleShow = () => {setShow(true)}
-    const handleClose = () => {setShow(false)}
+    const [modalData, setModalData] = useState<ProjectDetails | undefined>(undefined)
+    const handleShow = (pd : ProjectDetails) => {
+        setModalData(pd)
+        setShow(true)
+    }
+    const handleClose = () => {
+        setModalData(undefined)
+        setShow(false)
+    }
 
     const selectFilter = (filter : Filter) => {
         setSelectedFilter(filter)
@@ -111,17 +108,17 @@ function Projects() {
                 )}
             </div>
 
-            {show && <ProjectModal
-                handleShow={handleShow}
-                handleClose={handleClose}
-                {...sampleData}
-            />}
+            {show && modalData &&
+                <ProjectModal
+                    handleClose={handleClose}
+                    {...modalData}
+                />
+            }
 
             <div className="project-card-container">
                 {display && display.map((pd, index) =>
                     <ProjectCard
-                        handleShow={handleShow}
-                        handleClose={handleClose}
+                        handleShow={() => handleShow(pd)}
                         key={index}
                         number={index+1}
                         {...pd}

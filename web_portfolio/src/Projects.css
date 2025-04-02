@@ -137,7 +137,8 @@
 
 .modal-details-content {
     flex: 1;
-    align-self: center;
+    display: flex;
+    align-items: center;
 }
 
 .modal-close {
