@@ -1,4 +1,4 @@
-import {useState} from "react"
+import {useState, useEffect} from "react"
 import { projectData, ProjectDetails } from "./data"
 import "./Projects.css"
 
@@ -26,7 +26,7 @@ function ProjectCard(props : ProjectCardProps) {
 function ProjectModal(props : ProjectCardProps) {
     return(
         <div className="modal-wrapper">
-            <p className="modal-close text2" onClick={props.handleClose}> X </p>
+            <p className="modal-close text1" onClick={props.handleClose}>X</p>
             <img className="modal-image" src={props.image} width="30%" height="30%"/>
             <div className="modal-right">
 
@@ -69,15 +69,15 @@ function Projects() {
 
     const [display, setDisplay] = useState<Array<ProjectDetails>>(projectData)
 
-    const [show, setShow] = useState<boolean>(false)
+    const [showModal, setShowModal] = useState<boolean>(false)
     const [modalData, setModalData] = useState<ProjectDetails | undefined>(undefined)
     const handleShow = (pd : ProjectDetails) => {
         setModalData(pd)
-        setShow(true)
+        setShowModal(true)
     }
     const handleClose = () => {
         setModalData(undefined)
-        setShow(false)
+        setShowModal(false)
     }
 
     const selectFilter = (filter : Filter) => {
@@ -91,6 +91,15 @@ function Projects() {
         }
     }
     
+    useEffect(() => {
+        if(showModal){
+            document.body.classList.add("no-interaction")
+        }
+        else{
+            document.body.classList.remove("no-interaction")
+        }
+    }, [showModal])
+
     return (
         <div>
             <h1>Projects</h1>
@@ -108,12 +117,14 @@ function Projects() {
                 )}
             </div>
 
-            {show && modalData &&
-                <ProjectModal
-                    handleClose={handleClose}
-                    {...modalData}
-                />
-            }
+            <div className={showModal ? 'fade-in' : 'fade-out'}>
+                {showModal && modalData &&
+                    <ProjectModal
+                        handleClose={handleClose}
+                        {...modalData}
+                    />
+                }
+            </div>
 
             <div className="project-card-container">
                 {display && display.map((pd, index) =>

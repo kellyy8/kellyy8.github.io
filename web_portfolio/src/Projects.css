@@ -1,9 +1,9 @@
 .filter-panel {
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     justify-self: center;
-    min-width: 90%;
 }
 
 .filter-button-wrapper {
@@ -40,8 +40,8 @@
 }
 
 .project-card-container {
+    width: 90%;
     margin: 2em 0;
-    min-width: 100%;
     justify-self: center;
 
     /* border: solid 1px var(--dark-green); */
@@ -95,14 +95,52 @@
     }
 }
 
-.modal-wrapper {
-    position: relative;
+/* Fade in and out animation (for project modal). */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1); /* Centered and visible */
+    }
+}
+  
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.5); /* Fade out and shrink */
+    }
+}
+  
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
 
-    width: 75%;
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+.modal-wrapper {
+    /* Center the modal. */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+
+    width: 70%;
+    z-index: 1000;
+    pointer-events: auto;  /* Keep links & buttons in modal interactive. Background non-interactive. */
+
+    /* Align items within the modal. */
     padding: 4em;
     display: flex;
     flex-direction: row;
-    justify-self: center;
     align-items: center;
     column-gap: 4em;
 
@@ -143,7 +181,19 @@
 
 .modal-close {
     position: absolute;
-    top: 1em;
-    right: 2em;
+    top: 0.25em;
+    right: 1.5em;
+    
     font-weight: 600;
+    transition: transform 0.3s ease;
+    padding: 0.25em;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.no-interaction {
+    pointer-events: none;
 }
