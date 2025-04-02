@@ -47,7 +47,6 @@ function ProjectModal(props : ProjectCardProps) {
                     <p className="modal-details-label">More Info:</p>
                     <div className="modal-details-content">
                         {/** TODO: Use Link element. */}
-                        {/** TODO: Space out the links. */}
                         {props.links && props.links.map((item, index) => 
                             <>
                                 <a href={item[1]} key={index}>{item[0]}</a>
@@ -91,6 +90,7 @@ function Projects() {
         }
     }
     
+    // Disable interactions for items behind the modal when modal is open.
     useEffect(() => {
         if(showModal){
             document.body.classList.add("no-interaction")
@@ -101,7 +101,7 @@ function Projects() {
     }, [showModal])
 
     return (
-        <div>
+        <>
             <h1>Projects</h1>
             <p className="text2"><em>some fun projects i worked on :)</em></p>
 
@@ -117,14 +117,17 @@ function Projects() {
                 )}
             </div>
 
-            <div className={showModal ? 'fade-in' : 'fade-out'}>
-                {showModal && modalData &&
+            {showModal && modalData && 
+            <>
+                <div className={showModal ? 'modal-overlay' : ''} onClick={handleClose}></div>
+                <div className={showModal ? 'fade-in' : 'fade-out'}>
                     <ProjectModal
                         handleClose={handleClose}
                         {...modalData}
                     />
-                }
-            </div>
+                </div>
+            </>
+            }
 
             <div className="project-card-container">
                 {display && display.map((pd, index) =>
@@ -137,7 +140,7 @@ function Projects() {
                 )}
             </div>
 
-        </div>
+        </>
     )
 }
 

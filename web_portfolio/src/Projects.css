@@ -134,7 +134,6 @@
     transform: translate(-50%, 25%);
 
     width: 70%;
-    z-index: 1000;
     pointer-events: auto;  /* Keep links & buttons in modal interactive. Background non-interactive. */
 
     /* Align items within the modal. */
@@ -183,7 +182,7 @@
     position: absolute;
     top: 0.25em;
     right: 1.5em;
-    
+
     font-weight: 600;
     transition: transform 0.3s ease;
     padding: 0.25em;
@@ -196,4 +195,15 @@
 
 .no-interaction {
     pointer-events: none;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    pointer-events: auto;  /* Allow users to close the modal by clicking on overlay. */
 }
