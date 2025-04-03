@@ -60,11 +60,11 @@ function ProjectModal(props : ProjectCardProps) {
     )
 }
 
-type Filter = "all" | "software development" | "ui/ux design" | "data analysis"
+type ProjectFilter = "all" | "software development" | "ui/ux design" | "data analysis"
 
 function Projects() {
-    const allFilters : Array<Filter> = ["all", "software development", "ui/ux design", "data analysis"]
-    const [selectedFilter, setSelectedFilter] = useState<Filter>("all")
+    const allFilters : Array<ProjectFilter> = ["all", "software development", "ui/ux design", "data analysis"]
+    const [selectedFilter, setSelectedFilter] = useState<ProjectFilter>("all")
 
     const [display, setDisplay] = useState<Array<ProjectDetails>>(projectData)
 
@@ -79,7 +79,7 @@ function Projects() {
         setShowModal(false)
     }
 
-    const selectFilter = (filter : Filter) => {
+    const selectFilter = (filter : ProjectFilter) => {
         setSelectedFilter(filter)
         if (filter === "all"){
             setDisplay(projectData)

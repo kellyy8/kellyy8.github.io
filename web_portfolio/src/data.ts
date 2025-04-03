@@ -11,6 +11,24 @@ import OnTheDot from '../src/assets/logos_projects/on_the_dot.png';
 import SuperPeachSisters from '../src/assets/logos_projects/super_peach_sisters.png';
 import VitalMotion from '../src/assets/logos_projects/vital_motion.png';
 
+import quote1 from '../src/assets/gd/1.jpg';
+import quote2 from '../src/assets/gd/2.jpg';
+import quote3 from '../src/assets/gd/3.jpg';
+import quote4 from '../src/assets/gd/4.jpg';
+import quote5 from '../src/assets/gd/5.jpg';
+import quote6 from '../src/assets/gd/6.jpg';
+import quote7 from '../src/assets/gd/7.jpg';
+import quote8 from '../src/assets/gd/8.jpg';
+import quote9 from '../src/assets/gd/9.jpg';
+import quote10 from '../src/assets/gd/10.jpg';
+import quote11 from '../src/assets/gd/11.jpg';
+import quote12 from '../src/assets/gd/12.jpg';
+import quote13 from '../src/assets/gd/13.jpg';
+import aca from '../src/assets/gd/play_a_card_game.jpg';
+import week4_ig from '../src/assets/gd/week4_ig.png';
+import week5_ig from '../src/assets/gd/week5_ig.png';
+import week10_ig from '../src/assets/gd/week10_ig.png';
+
 export type ProjectDetails = {
     category: string;
     subcategory?: string;
@@ -159,4 +177,169 @@ export const projectData : Array<ProjectDetails> = [
         description: "With data visualization and analysis, 'Brewin' Happiness' explores how politics, technology, and wealth impact individual wellbeing. We used data from the World Happiness Report 2020 that was collected from 1,000 residents in each of the 153 selected countries.",
         links: [['Website', 'https://brewinhappiness.humspace.ucla.edu/']],
     }
+];
+
+export type HobbyDetails = {
+    category: string;
+    title: string;
+    image?: any;        /** For graphic design */
+    link?: string;      /** For dance and videography */
+}
+
+export const hobbyData : Array<HobbyDetails> = [
+    {
+        category: 'Graphic Design',
+        title: 'Quote #1',
+        image: quote13,
+    },
+    {
+        category: 'Graphic Design',
+        title: 'Quote #2',
+        image: quote1,
+    },
+    {
+        category: 'Graphic Design',
+        title: 'Quote #3',
+        image: quote2,
+    },
+    {
+        category: 'Graphic Design',
+        title: 'Quote #4',
+        image: quote3,
+    },
+    {
+        category: 'Graphic Design',
+        title: 'Quote #5',
+        image: quote4,
+    },
+    {
+        category: 'Graphic Design',
+        title: 'Quote #6',
+        image: quote5,
+    },
+    {
+        category: 'Graphic Design',
+        title: 'Quote #7',
+        image: quote6,
+    },
+    {
+        category: 'Graphic Design',
+        title: 'Quote #8',
+        image: quote7,
+    },
+    {
+        category: 'Graphic Design',
+        title: 'Quote #9',
+        image: quote8,
+    },
+    {
+        category: 'Graphic Design',
+        title: 'Quote #10',
+        image: quote9,
+    },
+    {
+        category: 'Graphic Design',
+        title: 'Quote #11',
+        image: quote10,
+    },
+    {
+        category: 'Graphic Design',
+        title: 'Quote #12',
+        image: quote11,
+    },
+    {
+        category: 'Graphic Design',
+        title: 'Quote #13',
+        image: quote12,
+    },
+    {
+        category: 'Graphic Design',
+        title: 'ACA Social Night',
+        image: aca,
+    },
+    {
+        category: 'Graphic Design',
+        title: 'Bruin Creators: Week 4 Workshop',
+        image: week4_ig,
+    },
+    {
+        category: 'Graphic Design',
+        title: 'Bruin Creators: Week 5 Workshop',
+        image: week5_ig,
+    },
+    {
+        category: 'Graphic Design',
+        title: 'Bruin Creators: Guest Speaker',
+        image: week10_ig,
+    },
+    {
+        category: 'Videography',
+        title: "a Year in my Life || 7000+ pictures",
+        link: "https://www.youtube.com/embed/KW4k2BwoXqg?si=BM5mgk6wq3vNgZA4",
+    },
+    {
+        category: 'Videography',
+        title: "UCLA Acceptance Video Challenge",
+        link: "https://www.youtube.com/embed/NPaA-m0WH94?si=VfY4STPQm69eNFeg",
+    },
+    {
+        category: 'Videography',
+        title: "ATE [Front View] || Eclipse: Foundations Choreography Fall 2023 Exhibition",
+        link: "https://www.youtube.com/embed/prJa8QQw2Pw?si=CZM0ZOPO7yAsbqlK",
+    },
+    {
+        category: 'Videography',
+        title: "Zinc Lim || Foundations Choreography Fall 2023 Workshop",
+        link: "https://www.youtube.com/embed/6CMe_H4QKXs?si=CBHeUf29lkdfxr1R",
+    },
+    {
+        category: 'Dance',
+        title: "ACA [WIDE VIEW] || Resurgence 2023 [@VIBRVNCY 4k]",
+        link: "https://www.youtube.com/embed/la12pLEXvKw?si=ZI6eJ-FQOLiBRHf4",
+    },
+    {
+        category: 'Dance',
+        title: "ACA [FRONT ROW] || Resurgence 2023 [@VIBRVNCY 4k]",
+        link: "https://www.youtube.com/embed/FfaZ7bYxWmY?si=1t_nS0PJ_JPTeBm0",
+    },
+    {
+        category: 'Dance',
+        title: "ACA [WIDE VIEW] || Prelude NorCal 2023",
+        link: "https://www.youtube.com/embed/OQeutCd8Ssw?si=h7wickFPAQspGRz5",
+    },
+    {
+        category: 'Dance',
+        title: "ACA [FRONT ROW] || Prelude NorCal 2023",
+        link: "https://www.youtube.com/embed/1f-jkEIxosk?si=Ur91y2hpQ5Ifu06j",
+    },
+    {
+        category: 'Dance',
+        title: "LSHIP Set || Zenith: Foundations Choreography Spring 2023 Exhibition",
+        link: "https://www.youtube.com/embed/X_e_upKWDrA?si=8hrlYZ8hjtiEYTqu",
+    },
+    {
+        category: 'Dance',
+        title: "UCLA Spring Sing 2022 Talent: ACA",
+        link: "https://www.youtube.com/embed/oc_rrmS9W6k?si=Y8eGDL5BT7WMhw0B",
+    },
+    {
+        category: 'Dance',
+        title: "ACA || Daybreak: Foundations Choreography Fall 2021 Exhibition",
+        link: "https://www.youtube.com/embed/PCtdMjVWS50?si=A8gZkORnREZLIabK",
+    },
+    {
+        category: 'Dance',
+        title: "MSG || Metamorphosis: Foundations Choreography Fall 2020 Virtual Exhibition",
+        link: "https://www.youtube.com/embed/UnO_A7fpkbM?si=hNAlPKq9K5o2DIiL",
+    },
+    {
+        category: 'Videography',
+        title: "SACA [Front Row] || Zenith: Foundations Choreography Spring 2023 Exhibition",
+        link: "https://www.youtube.com/embed/sa4ywlliijI?si=8O2IXkl_1D-F8-M6",
+    },
+    {
+        category: 'Videography',
+        title: "Plan D [Front View] || Zenith: Foundations Choreography Spring 2023 Exhibition",
+        link: "https://www.youtube.com/embed/Q8cOncOzK40?si=qa7Pc71gtBPAsOrH",
+    },
 ];

@@ -1,3 +1,10 @@
+#root {
+  width: 1280px;  /** Fixed. **/
+  margin: 0 auto;
+  padding: 2rem;
+  /* text-align: center; */
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -33,6 +40,8 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+
+  /** TODO: Adjust place-items properties for Projects and Hobbies page (centered horizontally only). **/
   place-items: center;  /** Centers the items on the screen. Vertically and horizontally. **/
   text-align: center;   /** Centers the text on the screen. **/
   min-width: 320px;
