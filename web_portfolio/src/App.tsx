@@ -1,7 +1,6 @@
-import "./App.css"
 import largeTulip from "../src/assets/large_tulip.png"
-import { CiLinkedin } from "react-icons/ci"
-import { FaGithub, FaFigma } from "react-icons/fa"
+import Footer from "./Footer"
+import "./App.css"
 
 function App() {
 
@@ -13,9 +12,6 @@ function App() {
         <em>innovating for an impact.</em>
         ♡
       </h2>
-
-      <br/>
-      <br/>
 
       <div className="links-container">
         <div>
@@ -32,18 +28,7 @@ function App() {
         </div>
       </div>
 
-      <br/>
-      <br/>
-
-      {/** Footer */}
-      <div className="footer-wrapper">
-        <div className="icons-wrapper">
-          <CiLinkedin size="2.5em"/>
-          <FaGithub size="2em"/>
-          <FaFigma size="2em"/>
-        </div>
-        <p className="text2">growth is a process</p>
-      </div>
+      <Footer />
 
     </div>
   )

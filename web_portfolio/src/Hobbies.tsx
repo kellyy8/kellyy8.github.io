@@ -1,7 +1,8 @@
 import {useState} from "react"
+import { HobbyDetails, hobbyData } from "./data"
+import Footer from "./Footer"
 import "./Hobbies.css"
 import "./Projects.css"  // TODO: Remove import and move shared styles into index.css
-import { HobbyDetails, hobbyData } from "./data"
 
 type HobbyFilter = "dance" | "graphic design" | "videography"
 
@@ -35,7 +36,9 @@ function Hobbies() {
     const allFilters : Array<HobbyFilter> = ["dance", "graphic design", "videography"]
     const [selectedFilter, setSelectedFilter] = useState<HobbyFilter>("dance")
 
-    const [display, setDisplay] = useState<Array<HobbyDetails>>(hobbyData)
+    const [display, setDisplay] = useState<Array<HobbyDetails>>(
+        hobbyData.filter((hd) => hd.category.toLowerCase() === "dance")
+    )
 
     const selectFilter = (filter : HobbyFilter) => {
         setSelectedFilter(filter)
@@ -78,6 +81,9 @@ function Hobbies() {
                     )
                 }
             </div>
+
+            <Footer />
+            
         </>
     )
 }

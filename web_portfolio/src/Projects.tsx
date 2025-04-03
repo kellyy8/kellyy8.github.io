@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react"
 import { projectData, ProjectDetails } from "./data"
+import Footer from "./Footer"
 import "./Projects.css"
 
 type ProjectCardProps = ProjectDetails & {
@@ -140,6 +141,7 @@ function Projects() {
                 )}
             </div>
 
+            <Footer />
         </>
     )
 }

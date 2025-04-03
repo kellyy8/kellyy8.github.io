@@ -109,6 +109,7 @@ button:focus-visible {
 } */
 
 .links-container {
+  margin: 8em 0;
   width: 60%;
   justify-self: center;  /** Center links container horizontally across the screen. **/
   display: flex;
@@ -116,6 +117,12 @@ button:focus-visible {
 }
 
 .footer-wrapper {
+  position: absolute;
+  margin-top: 4em;
+  width: 60%;
+  left: 50%;
+  transform: translate(-50%, 0);
+
   display: flex;
   flex-direction: column;
   align-items: center;
