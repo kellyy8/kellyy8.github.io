@@ -273,24 +273,14 @@ export const hobbyData : Array<HobbyDetails> = [
         image: week10_ig,
     },
     {
-        category: 'Videography',
-        title: "a Year in my Life || 7000+ pictures",
-        link: "https://www.youtube.com/embed/KW4k2BwoXqg?si=BM5mgk6wq3vNgZA4",
+        category: 'Dance',
+        title: "LSHIP Set [WIDE VIEW] || Supernova: Foundations Choreography Spring 2024 Exhibition",
+        link: "https://www.youtube.com/embed/X_e_upKWDrA?si=Up4_QUgQNE5bRvo_",
     },
     {
-        category: 'Videography',
-        title: "UCLA Acceptance Video Challenge",
-        link: "https://www.youtube.com/embed/NPaA-m0WH94?si=VfY4STPQm69eNFeg",
-    },
-    {
-        category: 'Videography',
-        title: "ATE [Front View] || Eclipse: Foundations Choreography Fall 2023 Exhibition",
-        link: "https://www.youtube.com/embed/prJa8QQw2Pw?si=CZM0ZOPO7yAsbqlK",
-    },
-    {
-        category: 'Videography',
-        title: "Zinc Lim || Foundations Choreography Fall 2023 Workshop",
-        link: "https://www.youtube.com/embed/6CMe_H4QKXs?si=CBHeUf29lkdfxr1R",
+        category: 'Dance',
+        title: "LSHIP Set [FRONT VIEW] || Supernova: Foundations Choreography Spring 2024 Exhibition",
+        link: "https://www.youtube.com/embed/Wt6Mk7rmTzA?si=4IwZ8wqcydEdNZ3H",
     },
     {
         category: 'Dance',
@@ -299,7 +289,7 @@ export const hobbyData : Array<HobbyDetails> = [
     },
     {
         category: 'Dance',
-        title: "ACA [FRONT ROW] || Resurgence 2023 [@VIBRVNCY 4k]",
+        title: "ACA [FRONT VIEW] || Resurgence 2023 [@VIBRVNCY 4k]",
         link: "https://www.youtube.com/embed/FfaZ7bYxWmY?si=1t_nS0PJ_JPTeBm0",
     },
     {
@@ -309,7 +299,7 @@ export const hobbyData : Array<HobbyDetails> = [
     },
     {
         category: 'Dance',
-        title: "ACA [FRONT ROW] || Prelude NorCal 2023",
+        title: "ACA [FRONT VIEW] || Prelude NorCal 2023",
         link: "https://www.youtube.com/embed/1f-jkEIxosk?si=Ur91y2hpQ5Ifu06j",
     },
     {
@@ -334,12 +324,32 @@ export const hobbyData : Array<HobbyDetails> = [
     },
     {
         category: 'Videography',
-        title: "SACA [Front Row] || Zenith: Foundations Choreography Spring 2023 Exhibition",
+        title: "a Year in my Life || 7000+ pictures",
+        link: "https://www.youtube.com/embed/KW4k2BwoXqg?si=BM5mgk6wq3vNgZA4",
+    },
+    {
+        category: 'Videography',
+        title: "UCLA Acceptance Video Challenge",
+        link: "https://www.youtube.com/embed/NPaA-m0WH94?si=VfY4STPQm69eNFeg",
+    },
+    {
+        category: 'Videography',
+        title: "ATE [Front View] || Eclipse: Foundations Choreography Fall 2023 Exhibition",
+        link: "https://www.youtube.com/embed/prJa8QQw2Pw?si=CZM0ZOPO7yAsbqlK",
+    },
+    {
+        category: 'Videography',
+        title: "Zinc Lim || Foundations Choreography Fall 2023 Workshop",
+        link: "https://www.youtube.com/embed/6CMe_H4QKXs?si=CBHeUf29lkdfxr1R",
+    },
+    {
+        category: 'Videography',
+        title: "SACA [FRONT VIEW] || Zenith: Foundations Choreography Spring 2023 Exhibition",
         link: "https://www.youtube.com/embed/sa4ywlliijI?si=8O2IXkl_1D-F8-M6",
     },
     {
         category: 'Videography',
-        title: "Plan D [Front View] || Zenith: Foundations Choreography Spring 2023 Exhibition",
+        title: "Plan D [FRONT VIEW] || Zenith: Foundations Choreography Spring 2023 Exhibition",
         link: "https://www.youtube.com/embed/Q8cOncOzK40?si=qa7Pc71gtBPAsOrH",
     },
 ];
