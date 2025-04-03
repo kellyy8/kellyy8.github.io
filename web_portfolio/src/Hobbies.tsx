@@ -18,7 +18,14 @@ function GraphicDesignCard({title, image} : HobbyDetails) {
 function DanceVidCard({title, link} : HobbyDetails) {
     return(
         <div className="dv-wrapper">
-            {/** TODO: Embed video via `link` that can be played small and full screen. */}
+            <iframe
+                width="90%"
+                height="315"
+                src={link}
+                title={title}
+                style={{border: "none"}}
+                allowFullScreen
+            />
             <p className="text2">{title}</p>
         </div>
     )
@@ -53,15 +60,18 @@ function Hobbies() {
                 )}
             </div>
 
-            <div className="hobbies-container">
-                {/** Container for hobbies. */}
+            <div
+                className="hobbies-container"
+                style={selectedFilter !== "graphic design" ? {alignItems: "flex-start"} : {}}
+            >
+                {/** Display for hobbies. */}
                 {selectedFilter === "graphic design" && display &&
                     display.map((gd, index) => 
                         <GraphicDesignCard key={index} {...gd}/>
                     )
                 }
 
-                {/** TODO: Container for dance and videography. */}
+                {/** Display for dance and videography. */}
                 {selectedFilter !== "graphic design" && display && 
                     display.map((dv, index) => 
                         <DanceVidCard key={index} {...dv} />

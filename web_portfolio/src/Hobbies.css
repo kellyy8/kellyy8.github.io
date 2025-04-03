@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between;  /** TODO: Center the items? */
     align-items: flex-end;
 
     padding: 2em 0;
@@ -20,5 +20,14 @@
     & .gd-image {
         border: solid 2px var(--sage-green);
         border-radius: 0.5em;
+    }
+}
+
+.dv-wrapper {
+    width: 50%;
+    margin: 1em 0;
+
+    & .text2 {
+        margin: 0.5em;
     }
 }
