@@ -1,44 +1,3 @@
-.filter-panel {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-self: center;
-}
-
-.filter-button-wrapper {
-    padding: 0.25rem 2rem;
-    border-radius: 25px;
-    background-color: var(--dark-green);
-    transition: transform 0.3s ease;
-
-    &.selected {
-        background-color: var(--darker-green);
-    }
-
-    &:hover:not(.selected){
-        transform: scale(1.05); /* Scale up by 5% */
-    }
-
-    &:active:not(.selected) {
-        background-color: var(--darker-green);
-    }
-}
-
-.filter-button-text {
-    margin: 0;
-    padding: 0.25em;
-    font-weight: 800;
-    font-size: 1em;
-
-    color: var(--mint-green);
-    text-shadow: 
-        1px 1px 0px var(--darker-green),   /* Shadow on the top-right */
-        -1px -1px 0px var(--darker-green), /* Shadow on the top-left */
-        1px -1px 0px var(--darker-green),  /* Shadow on the bottom-right */
-        -1px 1px 0px var(--darker-green);  /* Shadow on the bottom-left */
-}
-
 .project-card-container {
     width: 90%;
     margin: 2em 0;
@@ -95,6 +54,7 @@
     }
 }
 
+/* Modal styles */
 /* Fade in and out animation (for project modal). */
 @keyframes fadeIn {
     0% {

@@ -69,7 +69,7 @@ h2 {
   font-size: 1em;
 }
 
-button {
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -86,9 +86,9 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: var(--dark-green);
     background-color: var(--mint-green);
@@ -99,7 +99,7 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
 
 /* responsiveness
 @media (max-width: 100px) {
@@ -108,14 +108,7 @@ button:focus-visible {
   }
 } */
 
-.links-container {
-  margin: 8em 0;
-  width: 60%;
-  justify-self: center;  /** Center links container horizontally across the screen. **/
-  display: flex;
-  justify-content: space-between;
-}
-
+/* Footer */
 .footer-wrapper {
   position: absolute;
   margin-top: 4em;
@@ -133,4 +126,46 @@ button:focus-visible {
   align-items: center;
   justify-content: space-between;
   width: 30%;
+}
+
+/* Filter panel with filter buttons. */
+.filter-panel {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: center;
+}
+
+.filter-button-wrapper {
+  padding: 0.25rem 2rem;
+  border-radius: 25px;
+  background-color: var(--dark-green);
+  transition: transform 0.3s ease;
+
+  &.selected {
+      background-color: var(--darker-green);
+  }
+
+  &:hover:not(.selected){
+      transform: scale(1.05); /* Scale up by 5% */
+  }
+
+  &:active:not(.selected) {
+      background-color: var(--darker-green);
+  }
+}
+
+.filter-button-text {
+  margin: 0;
+  padding: 0.25em;
+  font-weight: 800;
+  font-size: 1em;
+
+  color: var(--mint-green);
+  text-shadow: 
+      1px 1px 0px var(--darker-green),   /* Shadow on the top-right */
+      -1px -1px 0px var(--darker-green), /* Shadow on the top-left */
+      1px -1px 0px var(--darker-green),  /* Shadow on the bottom-right */
+      -1px 1px 0px var(--darker-green);  /* Shadow on the bottom-left */
 }

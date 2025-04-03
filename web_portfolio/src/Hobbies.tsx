@@ -2,7 +2,6 @@ import {useState} from "react"
 import { HobbyDetails, hobbyData } from "./data"
 import Footer from "./Footer"
 import "./Hobbies.css"
-import "./Projects.css"  // TODO: Remove import and move shared styles into index.css
 
 type HobbyFilter = "dance" | "graphic design" | "videography"
 
