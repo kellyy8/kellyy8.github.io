@@ -30,11 +30,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--dark-green);
   text-decoration: underline;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--white);
 }
 
 body {
@@ -142,6 +142,8 @@ button:focus-visible {
   background-color: var(--dark-green);
   transition: transform 0.3s ease;
 
+  cursor: pointer;
+
   &.selected {
       background-color: var(--darker-green);
   }
@@ -220,4 +222,8 @@ button:focus-visible {
   & h1 {
     margin: 0;
   }
+}
+
+.icon {
+  cursor: pointer;
 }

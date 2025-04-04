@@ -73,9 +73,13 @@
     pointer-events: auto; /* Allows users to click X to close the modal. */
 }
 
-.gd-image {
+.gd-image, .gd-modal-image {
     border-radius: 1em;
     border: solid 2px var(--sage-green);
+}
+
+.gd-image {
+    cursor: pointer;
 }
 
 .gd-close {
@@ -85,6 +89,7 @@
     color: var(--mint-green);
     
     transition: transform 0.3s ease;
+    cursor: pointer;
 
     &:hover {
         transform: scale(1.25);

@@ -32,7 +32,7 @@ function GraphicDesignModal({image, handleClose} : GraphicDesignProps){
     return(
         <div className="gd-modal-wrapper">
             <p className="text1 gd-close" onClick={handleClose}>X</p>
-            <img className="gd-image" src={image} width="100%" height="auto"/>
+            <img className="gd-modal-image" src={image} width="100%" height="auto"/>
         </div>
     )
 }

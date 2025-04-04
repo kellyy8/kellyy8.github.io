@@ -18,6 +18,7 @@
     /* border: solid 1px var(--dark-green); */
     
     transition: transform 0.3s ease;
+    cursor: pointer;
 
     &:hover {
         transform: scale(1.025);
