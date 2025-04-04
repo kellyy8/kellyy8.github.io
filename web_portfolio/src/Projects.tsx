@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react"
 import { projectData, ProjectDetails } from "./data"
+import largeTulip from './assets/large_tulip.png'
 import NavBar from "./NavBar"
 import Footer from "./Footer"
 import "./Projects.css"
@@ -105,7 +106,11 @@ function Projects() {
         <>
             <NavBar />
 
-            <h1>Projects</h1>
+            <div className="page-header">
+                <img src={largeTulip} width="7%" height="auto"/>
+                <h1>projects</h1>
+                <img src={largeTulip} width="7%" height="auto"/>
+            </div>
             <p className="text2"><em>some fun projects i worked on :)</em></p>
 
             <div className="filter-panel">

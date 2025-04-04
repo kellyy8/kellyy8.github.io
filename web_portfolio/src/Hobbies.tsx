@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react"
 import { HobbyDetails, hobbyData } from "./data"
+import largeTulip from "../src/assets/large_tulip.png"
 import NavBar from './NavBar'
 import Footer from "./Footer"
 import "./Hobbies.css"
@@ -91,7 +92,12 @@ function Hobbies() {
         <>
             <NavBar />
             
-            <h1>Hobbies</h1>
+            <div className="page-header">
+                <img src={largeTulip} width="7%" height="auto"/>
+                <h1>hobbies</h1>
+                <img src={largeTulip} width="7%" height="auto"/>
+            </div>
+            
             <p className="text2"><em>some cool things i created with some really cool people :)</em></p>
             
             <div className="filter-panel">

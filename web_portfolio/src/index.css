@@ -208,3 +208,16 @@ button:focus-visible {
     color: var(--white);
   }
 }
+
+.page-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  column-gap: 4%;
+
+  & h1 {
+    margin: 0;
+  }
+}

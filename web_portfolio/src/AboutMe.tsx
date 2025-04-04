@@ -1,7 +1,7 @@
 import headshot from './assets/headshot.jpg'
 import dance from './assets/dance.png'
 import web_dev from './assets/web_dev.png'
-import large_tulip from './assets/large_tulip.png'
+import largeTulip from './assets/large_tulip.png'
 import { ExtracurricularDetails, professionalExtracurricularData, creativeExtracurricularData } from './data'
 import NavBar from './NavBar'
 import Footer from './Footer'
@@ -10,11 +10,11 @@ import './AboutMe.css'
 function Divider() {
     return(
         <div className="divider-wrapper">
-            <img src={large_tulip} width="60" height="auto"/>
-            <img src={large_tulip} width="60" height="auto"/>
-            <img src={large_tulip} width="60" height="auto"/>
-            <img src={large_tulip} width="60" height="auto"/>
-            <img src={large_tulip} width="60" height="auto"/>
+            <img src={largeTulip} width="60" height="auto"/>
+            <img src={largeTulip} width="60" height="auto"/>
+            <img src={largeTulip} width="60" height="auto"/>
+            <img src={largeTulip} width="60" height="auto"/>
+            <img src={largeTulip} width="60" height="auto"/>
         </div>
     )
 }
@@ -38,7 +38,12 @@ function AboutMe() {
         <>
             <NavBar />
             
-            <h1>about me</h1>
+            <div className="page-header">
+                <img src={largeTulip} width="7%" height="auto"/>
+                <h1>about me</h1>
+                <img src={largeTulip} width="7%" height="auto"/>
+            </div>
+
             <p className="text2">
                 <em>
                     "You do not just wake up and become the butterfly. Growth is a process."
