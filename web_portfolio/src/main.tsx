@@ -9,8 +9,8 @@ import Hobbies from './Hobbies.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     {/* <App /> */}
-    <AboutMe />
-    {/* <Projects /> */}
+    {/* <AboutMe /> */}
+    <Projects />
     {/* <Hobbies /> */}
   </StrictMode>,
 )
