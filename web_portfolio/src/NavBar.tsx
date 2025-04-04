@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import {Link} from 'react-router-dom'
 import wc from './assets/water_can_default.png'
 import './NavBar.css'
 
@@ -17,10 +18,12 @@ function NavBar() {
             />
             {showDropdown && 
                 <>
-                    <p className="text2">⚘ &nbsp; home</p>
-                    <p className="text2">⚘ &nbsp; about me</p>
-                    <p className="text2">⚘ &nbsp; projects</p>
-                    <p className="text2">⚘ &nbsp; hobbies</p>
+                    <nav>
+                        <p className="text2">⚘ &nbsp;<Link id="homeLink" className="text2" to="/">home</Link></p>
+                        <p className="text2">⚘ &nbsp;<Link id="aboutLink" className="text2" to="/about">about me</Link></p>
+                        <p className="text2">⚘ &nbsp;<Link id="projectsLink" className="text2" to="/projects">projects</Link></p>
+                        <p className="text2">⚘ &nbsp;<Link id="hobbiesLink" className="text2" to="/hobbies">hobbies</Link></p>
+                    </nav>
                 </>
             }
         </div>
