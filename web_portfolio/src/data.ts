@@ -394,7 +394,7 @@ export const professionalExtracurricularData : Array<ExtracurricularDetails> = [
         image: swe,
         title: 'Society of Women Engineers',
         role: 'Mentor',
-        link: 'https://www.sweucla.com/',
+        link: 'https://ucla.swe.org/',
     },
     {
         image: upe,

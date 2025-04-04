@@ -47,7 +47,6 @@ function ProjectModal(props : ProjectCardProps) {
                 <div className="modal-details-pair">
                     <p className="modal-details-label">More Info:</p>
                     <div className="modal-details-content">
-                        {/** TODO: Use Link element. */}
                         {props.links && props.links.map((item, index) => 
                             <>
                                 <a href={item[1]} key={index}>{item[0]}</a>

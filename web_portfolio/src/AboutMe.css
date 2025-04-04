@@ -54,6 +54,12 @@
 .ec-image {
     border: solid 2px var(--sage-green);
     border-radius: 1em;
+    
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 .ec-wrapper {

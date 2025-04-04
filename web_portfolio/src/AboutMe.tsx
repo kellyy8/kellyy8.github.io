@@ -23,7 +23,9 @@ type ECCardProps = ExtracurricularDetails
 function ECCard({image, title, role, link} : ECCardProps) {
     return(
         <div className="ec-wrapper">
-            <img className="ec-image" src={image} width="80%" height="auto"/>
+            <a href={link} target='_blank'>
+                <img className="ec-image" src={image} width="80%" height="auto"/>
+            </a>
             <p className="text2"><strong>{title}</strong></p>
             <p className="text2"><em>{role}</em></p>
         </div>
@@ -81,19 +83,19 @@ function AboutMe() {
             <div className="skills-container">
                 <h2>skills</h2>
                 <p className="text2">
-                    <a href="https://www.linkedin.com/in/kellyy8/">LinkedIn</a> &nbsp; | &nbsp;
-                    <a href="https://github.com/kellyy8">GitHub</a> &nbsp; | &nbsp;
-                    <a href="https://tinyurl.com/Kelly-Yu-Design-Portfolio">Design Portfolio</a> &nbsp; | &nbsp;
-                    <a href="https://drive.google.com/file/d/10ihn1amqzzKLQrpzU3WzWcL8ohkoe2Ji/view?usp=drive_link">Resume</a>
+                    <a href="https://www.linkedin.com/in/kellyy8/" target="_blank">LinkedIn</a> &nbsp; | &nbsp;
+                    <a href="https://github.com/kellyy8" target="_blank">GitHub</a> &nbsp; | &nbsp;
+                    <a href="https://tinyurl.com/Kelly-Yu-Design-Portfolio" target="_blank">Design Portfolio</a> &nbsp; | &nbsp;
+                    <a href="https://drive.google.com/file/d/10ihn1amqzzKLQrpzU3WzWcL8ohkoe2Ji/view?usp=drive_link" target="_blank">Resume</a>
                 </p>
 
                 <div className="skill-list-pair">
                     <p className="text2 label"><strong>Programming Languages:</strong></p>
-                    <p className="text2 list">JavaScript, TypeScript, HTML/CSS, Python, C/C++, Java, Swift, Bash, Haskell, Prolog</p>
+                    <p className="text2 list"><strong>TypeScript</strong>, <strong>JavaScript</strong>, HTML/CSS, <strong>Python</strong>, C/C++, Java, Swift, Bash, Haskell, Prolog</p>
                 </div>
                 <div className="skill-list-pair">
                     <p className="text2 label"><strong>Technologies:</strong></p>
-                    <p className="text2 list">React, React Native, Figma, Chromatic, Linear, GCP, Azure, Next.js, Node.js, UML, Linux, Postgres, MongoDB, Neo4j, Redis, Docker, NumPy, Pandas, Tableau, Jupyter Notebooks</p>
+                    <p className="text2 list"><strong>React</strong>, <strong>React Native</strong>, <strong>Figma</strong>, Chromatic, Linear, GCP, Azure, Next.js, Node.js, UML, Linux, <strong>Postgres</strong>, MongoDB, Neo4j, Redis, Docker, NumPy, Pandas, Tableau, Jupyter Notebooks</p>
                 </div>
                 <div className="skill-list-pair">
                     <p className="text2 label"><strong>Conversational Languages:</strong></p>
