@@ -39,3 +39,42 @@
         margin: 0.5em;
     }
 }
+
+.no-interaction {
+    pointer-events: none;
+}
+
+.gd-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    pointer-events: auto;  /* Allow users to close the modal by clicking on overlay. */
+}
+
+.gd-modal-wrapper {
+    pointer-events: auto; /* Allows users to click X to close the modal. */
+}
+
+.gd-image {
+    border-radius: 1em;
+    border: solid 2px var(--sage-green);
+}
+
+.gd-close {
+    justify-self: right;
+    margin-right: 12em;
+    padding: 1em;
+    
+    font-weight: 900;
+    color: var(--mint-green);
+    
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.25);
+    }
+}

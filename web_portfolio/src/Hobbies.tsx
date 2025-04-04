@@ -1,4 +1,4 @@
-import {useState} from "react"
+import {useState, useEffect} from "react"
 import { HobbyDetails, hobbyData } from "./data"
 import Footer from "./Footer"
 import "./Hobbies.css"
@@ -6,11 +6,31 @@ import "./Hobbies.css"
 type HobbyFilter = "dance" | "graphic design" | "videography"
 
 // For graphic design category only.
-function GraphicDesignCard({title, image} : HobbyDetails) {
+type GraphicDesignProps = HobbyDetails & {
+    handleShow? : any;
+    handleClose? : any;
+}
+
+function GraphicDesignCard({title, image, handleShow} : GraphicDesignProps) {
     return(
         <div className="gd-wrapper">
-            <img className="gd-image" src={image} width="100%" height="auto"/> {/** TODO: Make image enlargeable! */}
+            <img
+                className="gd-image"
+                src={image}
+                width="100%"
+                height="auto"
+                onClick={handleShow}
+            />
             <p className="text2">{title}</p>
+        </div>
+    )
+}
+
+function GraphicDesignModal({image, handleClose} : GraphicDesignProps){
+    return(
+        <div className="gd-modal-wrapper">
+            <p className="text1 gd-close" onClick={handleClose}>X</p>
+            <img className="gd-image" src={image} width="50%" height="auto"/>
         </div>
     )
 }
@@ -45,6 +65,27 @@ function Hobbies() {
         setDisplay(newDisplay)
     }
 
+    const [showModal, setShowModal] = useState<boolean>(false)
+    const [selectedGD, setSelectedGD] = useState<HobbyDetails | undefined>(undefined)
+    const handleShow = (gd : HobbyDetails) => {
+        setSelectedGD(gd)
+        setShowModal(true)
+    }
+    const handleClose = () => {
+        setSelectedGD(undefined)
+        setShowModal(false)
+    }
+
+    // Disable interactions for items behind the modal when modal is open.
+    useEffect(() => {
+        if(showModal){
+            document.body.classList.add("no-interaction")
+        }
+        else{
+            document.body.classList.remove("no-interaction")
+        }
+    }, [showModal])
+
     return(
         <>
             <h1>Hobbies</h1>
@@ -65,9 +106,22 @@ function Hobbies() {
             {/** Display for hobbies. */}
             {selectedFilter === "graphic design" && display &&
                 <div className="gd-container">
-                {display.map((gd, index) => 
-                    <GraphicDesignCard key={index} {...gd}/>
-                )}
+                    {display.map((gd, index) => 
+                        <GraphicDesignCard
+                            key={index}
+                            handleShow={() => handleShow(gd)}
+                            {...gd}
+                        />
+                    )}
+                </div>
+            }
+
+            {showModal && selectedGD &&
+                <div className="gd-modal-overlay" onClick={handleClose}>
+                    <GraphicDesignModal
+                        handleClose={handleClose}
+                        {...selectedGD}
+                    />
                 </div>
             }
             
