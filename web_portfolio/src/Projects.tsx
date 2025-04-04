@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react"
 import { projectData, ProjectDetails } from "./data"
+import NavBar from "./NavBar"
 import Footer from "./Footer"
 import "./Projects.css"
 
@@ -102,6 +103,8 @@ function Projects() {
 
     return (
         <>
+            <NavBar />
+            
             <h1>Projects</h1>
             <p className="text2"><em>some fun projects i worked on :)</em></p>
 

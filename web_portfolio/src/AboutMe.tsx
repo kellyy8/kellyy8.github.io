@@ -3,6 +3,7 @@ import dance from './assets/dance.png'
 import web_dev from './assets/web_dev.png'
 import large_tulip from './assets/large_tulip.png'
 import { ExtracurricularDetails, professionalExtracurricularData, creativeExtracurricularData } from './data'
+import NavBar from './NavBar'
 import Footer from './Footer'
 import './AboutMe.css'
 
@@ -35,6 +36,8 @@ function ECCard({image, title, role, link} : ECCardProps) {
 function AboutMe() {
     return(
         <>
+            <NavBar />
+            
             <h1>about me</h1>
             <p className="text2">
                 <em>
