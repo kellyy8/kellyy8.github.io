@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom"
 import largeTulip from "../src/assets/large_tulip.png"
 import NavBar from "./NavBar"
 import Footer from "./Footer"
@@ -18,16 +19,22 @@ function App() {
 
       <div className="links-container">
         <div>
-          <img src={largeTulip} alt="Tulip." height="120"/>
-          <p className="text1">about me</p>
+          <Link id="aboutLink" to="/about">
+            <img src={largeTulip} alt="Tulip." height="120"/>  {/** TODO: Add hover state to tulips! */}
+            <p className="text1">about me</p>
+          </Link>
         </div>
         <div>
-          <img src={largeTulip} alt="Tulip." height="120"/>
-          <p className="text1">projects</p>
+          <Link id="projectsLink" to="/projects">
+            <img src={largeTulip} alt="Tulip." height="120"/>
+            <p className="text1">projects</p>
+          </Link>
         </div>
         <div>
-          <img src={largeTulip} alt="Tulip." height="120"/>
-          <p className="text1">hobbies</p>
+          <Link id="hobbiesLink" to="/hobbies">
+            <img src={largeTulip} alt="Tulip." height="120"/>
+            <p className="text1">hobbies</p>
+          </Link>
         </div>
       </div>
 

@@ -199,3 +199,12 @@ button:focus-visible {
 .fade-out {
   animation: fadeOut 0.5s forwards;
 }
+
+#homeLink, #aboutLink, #projectsLink, #hobbiesLink {
+  color: var(--dark-green);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--white);
+  }
+}

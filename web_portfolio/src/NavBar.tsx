@@ -19,10 +19,10 @@ function NavBar() {
             {showDropdown && 
                 <>
                     <nav>
-                        <p className="text2">⚘ &nbsp;<Link id="homeLink" className="text2" to="/">home</Link></p>
-                        <p className="text2">⚘ &nbsp;<Link id="aboutLink" className="text2" to="/about">about me</Link></p>
-                        <p className="text2">⚘ &nbsp;<Link id="projectsLink" className="text2" to="/projects">projects</Link></p>
-                        <p className="text2">⚘ &nbsp;<Link id="hobbiesLink" className="text2" to="/hobbies">hobbies</Link></p>
+                        <p className="text2">⚘ &nbsp;<Link id="homeLink" to="/">home</Link></p>
+                        <p className="text2">⚘ &nbsp;<Link id="aboutLink" to="/about">about me</Link></p>
+                        <p className="text2">⚘ &nbsp;<Link id="projectsLink" to="/projects">projects</Link></p>
+                        <p className="text2">⚘ &nbsp;<Link id="hobbiesLink" to="/hobbies">hobbies</Link></p>
                     </nav>
                 </>
             }
