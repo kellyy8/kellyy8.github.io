@@ -1,11 +1,19 @@
-.hobbies-container {
+.gd-container, .non-gd-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;  /** TODO: Center the items? */
     align-items: flex-end;
 
     padding: 2em 0;
+}
+
+.gd-container {
+    justify-content: center;
+}
+
+.non-gd-container {
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .gd-wrapper {

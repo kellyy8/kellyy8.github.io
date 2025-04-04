@@ -62,24 +62,23 @@ function Hobbies() {
                 )}
             </div>
 
-            <div
-                className="hobbies-container"
-                style={selectedFilter !== "graphic design" ? {alignItems: "flex-start"} : {}}
-            >
-                {/** Display for hobbies. */}
-                {selectedFilter === "graphic design" && display &&
-                    display.map((gd, index) => 
-                        <GraphicDesignCard key={index} {...gd}/>
-                    )
-                }
-
-                {/** Display for dance and videography. */}
-                {selectedFilter !== "graphic design" && display && 
-                    display.map((dv, index) => 
+            {/** Display for hobbies. */}
+            {selectedFilter === "graphic design" && display &&
+                <div className="gd-container">
+                {display.map((gd, index) => 
+                    <GraphicDesignCard key={index} {...gd}/>
+                )}
+                </div>
+            }
+            
+            {/** Display for dance and videography. */}
+            {selectedFilter !== "graphic design" && display && 
+                <div className="non-gd-container">
+                    {display.map((dv, index) => 
                         <DanceVidCard key={index} {...dv} />
-                    )
-                }
-            </div>
+                    )}
+                </div>
+            }
 
             <Footer />
             
