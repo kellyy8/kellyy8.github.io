@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react"
 import { HobbyDetails, hobbyData } from "./data"
+import NavBar from './NavBar'
 import Footer from "./Footer"
 import "./Hobbies.css"
 
@@ -88,6 +89,8 @@ function Hobbies() {
 
     return(
         <>
+            <NavBar />
+            
             <h1>Hobbies</h1>
             <p className="text2"><em>some cool things i created with some really cool people :)</em></p>
             
