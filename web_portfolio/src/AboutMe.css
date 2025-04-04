@@ -1,0 +1,67 @@
+.divider-wrapper {
+    width: 40%;
+    justify-self: center;
+    margin: 4em 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pic-words-pair {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    column-gap: 5%;
+}
+
+.headshot {
+    border: solid 2px var(--sage-green);
+    border-radius: 6em 8em 3em 2em;
+} 
+
+.skills-container, .ec-container {
+    text-align: left;
+}
+
+.skill-list-pair {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2%;
+
+    & .label {
+        width: 300px;
+        margin: 0;
+    }
+
+    & .list {
+        flex: 1;
+        margin: 0;
+    }
+}
+
+.ec-card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: flex-start;
+    column-gap: 5%;
+}
+
+.ec-image {
+    border: solid 2px var(--sage-green);
+    border-radius: 1em;
+}
+
+.ec-wrapper {
+    width: 20%;
+    text-align: center;
+    margin-bottom: 3em;
+    
+    & .text2 {
+        margin: 0;
+    }
+}

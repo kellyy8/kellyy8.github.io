@@ -1,3 +1,4 @@
+// Images for projects
 import PocketStudio from '../src/assets/logos_projects/pocket_studio.png';
 import BruinPause from '../src/assets/logos_projects/bruin_pause.png';
 import BrewinHappiness from '../src/assets/logos_projects/brewin_happiness.png';
@@ -11,6 +12,7 @@ import OnTheDot from '../src/assets/logos_projects/on_the_dot.png';
 import SuperPeachSisters from '../src/assets/logos_projects/super_peach_sisters.png';
 import VitalMotion from '../src/assets/logos_projects/vital_motion.png';
 
+// Images for graphic design
 import quote1 from '../src/assets/gd/1.jpg';
 import quote2 from '../src/assets/gd/2.jpg';
 import quote3 from '../src/assets/gd/3.jpg';
@@ -28,6 +30,20 @@ import aca from '../src/assets/gd/play_a_card_game.jpg';
 import week4_ig from '../src/assets/gd/week4_ig.png';
 import week5_ig from '../src/assets/gd/week5_ig.png';
 import week10_ig from '../src/assets/gd/week10_ig.png';
+
+// Images for extracurriculars
+import acaallday from '../src/assets/logos_ec/acaallday.png';
+import acabruins from '../src/assets/logos_ec/acabruins.png';
+import bc from '../src/assets/logos_ec/bc.png';
+import be from '../src/assets/logos_ec/bruin_entrepreneurs.png';
+import cp from '../src/assets/logos_ec/codepath.png'
+import dfg from '../src/assets/logos_ec/dfg.png'
+import fc from '../src/assets/logos_ec/fc.png';
+import treehacks from '../src/assets/logos_ec/treehacks.png';
+import lahacks from '../src/assets/logos_ec/lahacks.png';
+import swe from '../src/assets/logos_ec/swe.png';
+import tt from '../src/assets/logos_ec/tt.png';
+import upe from '../src/assets/logos_ec/upe.png';
 
 export type ProjectDetails = {
     category: string;
@@ -177,7 +193,7 @@ export const projectData : Array<ProjectDetails> = [
         description: "With data visualization and analysis, 'Brewin' Happiness' explores how politics, technology, and wealth impact individual wellbeing. We used data from the World Happiness Report 2020 that was collected from 1,000 residents in each of the 153 selected countries.",
         links: [['Website', 'https://brewinhappiness.humspace.ucla.edu/']],
     }
-];
+]
 
 export type HobbyDetails = {
     category: string;
@@ -352,4 +368,89 @@ export const hobbyData : Array<HobbyDetails> = [
         title: "Plan D [FRONT VIEW] || Zenith: Foundations Choreography Spring 2023 Exhibition",
         link: "https://www.youtube.com/embed/Q8cOncOzK40?si=qa7Pc71gtBPAsOrH",
     },
-];
+]
+
+export type ExtracurricularDetails = {
+    image: any;
+    title: string;
+    role: string;
+    link: string;
+}
+
+export const professionalExtracurricularData : Array<ExtracurricularDetails> = [
+    {
+        image: dfg,
+        title: 'Develop for Good',
+        role: 'Engineering Manager',
+        link: 'https://www.developforgood.org/',
+    },
+    {
+        image: tt,
+        title: 'Theta Tau - Professional Engineering Fraternity',
+        role: 'Webmaster',
+        link: 'https://www.thetataubruins.org/',
+    },
+    {
+        image: swe,
+        title: 'Society of Women Engineers',
+        role: 'Mentor',
+        link: 'https://www.sweucla.com/',
+    },
+    {
+        image: upe,
+        title: 'UCLA Upsilon Pi Epsilon Honor Society',
+        role: 'Tutor',
+        link: 'https://upe.seas.ucla.edu/',
+    },
+    {
+        image: acabruins,
+        title: 'Association of Chinese Americans',
+        role: 'Finance Intern',
+        link: 'https://acabruins.org/',
+    },
+    {
+        image: treehacks,
+        title: 'Stanford TreeHacks',
+        role: 'Hackathon Competitor',
+        link: 'https://treehacks.com/',
+    },
+    {
+        image: lahacks,
+        title: 'UCLA LA Hacks',
+        role: 'Hackathon Competitor',
+        link: 'https://www.instagram.com/lahacks/',
+    },
+    {
+        image: be,
+        title: 'Bruin Entrepreneurs',
+        role: 'Designathon Competitor',
+        link: 'https://designathon2023.bruinentrepreneurs.org/',
+    },
+    {
+        image: cp,
+        title: 'CodePath',
+        role: 'Student',
+        link: 'https://www.codepath.org/',
+    },
+]
+
+export const creativeExtracurricularData : Array<ExtracurricularDetails> = [
+    {
+        image: acaallday,
+        title: 'ACA All Day Collegiate Competitive Dance Team',
+        role: 'Dancer',
+        link: 'https://www.instagram.com/acaallday/',
+    },
+    {
+        image: fc,
+        title: 'Foundations Choreography',
+        role: 'Videographer',
+        link: 'https://www.instagram.com/foundationschoreo/',
+    },
+    {
+        image: bc,
+        title: 'Bruin Creators',
+        role: 'Marketing Director & Graphic Designer',
+        link: 'https://bruincreators.wixsite.com/home',
+    },
+]
