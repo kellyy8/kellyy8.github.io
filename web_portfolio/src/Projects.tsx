@@ -118,15 +118,15 @@ function Projects() {
             </div>
 
             {showModal && modalData && 
-            <>
-                <div className={showModal ? 'modal-overlay' : ''} onClick={handleClose}></div>
-                <div className={showModal ? 'fade-in' : 'fade-out'}>
-                    <ProjectModal
-                        handleClose={handleClose}
-                        {...modalData}
-                    />
-                </div>
-            </>
+                <>
+                    <div className={showModal ? 'modal-overlay' : ''} onClick={handleClose}></div>
+                    <div className={showModal ? 'fade-in' : 'fade-out'}>
+                        <ProjectModal
+                            handleClose={handleClose}
+                            {...modalData}
+                        />
+                    </div>
+                </>
             }
 
             <div className="project-card-container">
