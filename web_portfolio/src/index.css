@@ -168,3 +168,34 @@ button:focus-visible {
       1px -1px 0px var(--darker-green),  /* Shadow on the bottom-right */
       -1px 1px 0px var(--darker-green);  /* Shadow on the bottom-left */
 }
+
+/* Fade in and out animation for modals (for projects and graphic designs). */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* Centered and visible */
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5); /* Fade out and shrink */
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}

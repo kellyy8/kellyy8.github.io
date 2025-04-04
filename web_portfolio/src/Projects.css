@@ -55,37 +55,6 @@
 }
 
 /* Modal styles */
-/* Fade in and out animation (for project modal). */
-@keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: scale(0.5);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1); /* Centered and visible */
-    }
-}
-  
-@keyframes fadeOut {
-    0% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    100% {
-      opacity: 0;
-      transform: scale(0.5); /* Fade out and shrink */
-    }
-}
-  
-.fade-in {
-    animation: fadeIn 0.5s forwards;
-}
-
-.fade-out {
-    animation: fadeOut 0.5s forwards;
-}
-
 .modal-wrapper {
     /* Center the modal. */
     position: absolute;

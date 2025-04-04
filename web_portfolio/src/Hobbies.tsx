@@ -103,6 +103,18 @@ function Hobbies() {
                 )}
             </div>
 
+            {showModal && selectedGD &&
+                <>
+                    <div className={showModal ? 'gd-modal-overlay' : ''} onClick={handleClose}></div>
+                    <div className={showModal ? 'fade-in' : 'fade-out'}>
+                        <GraphicDesignModal
+                            handleClose={handleClose}
+                            {...selectedGD}
+                        />
+                    </div>
+                </>
+            }
+
             {/** Display for hobbies. */}
             {selectedFilter === "graphic design" && display &&
                 <div className="gd-container">
@@ -113,15 +125,6 @@ function Hobbies() {
                             {...gd}
                         />
                     )}
-                </div>
-            }
-
-            {showModal && selectedGD &&
-                <div className="gd-modal-overlay" onClick={handleClose}>
-                    <GraphicDesignModal
-                        handleClose={handleClose}
-                        {...selectedGD}
-                    />
                 </div>
             }
             
