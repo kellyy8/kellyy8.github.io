@@ -50,7 +50,7 @@ function ProjectModal(props : ProjectCardProps) {
                     <div className="modal-details-content">
                         {props.links && props.links.map((item, index) => 
                             <>
-                                <a href={item[1]} key={index}>{item[0]}</a>
+                                <a href={item[1]} key={index} target="_blank">{item[0]}</a>
                                 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
                             </>
                         )}
@@ -104,7 +104,7 @@ function Projects() {
     return (
         <>
             <NavBar />
-            
+
             <h1>Projects</h1>
             <p className="text2"><em>some fun projects i worked on :)</em></p>
 
