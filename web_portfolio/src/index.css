@@ -134,6 +134,7 @@ button:focus-visible {
   justify-content: space-between;
   align-items: center;
   justify-self: center;
+  padding-top: 2em;
 }
 
 .filter-button-wrapper {
@@ -218,6 +219,7 @@ button:focus-visible {
   justify-content: center;
   align-items: flex-end;
   column-gap: 4%;
+  margin: 1em 0 0;
 
   & h1 {
     margin: 0;

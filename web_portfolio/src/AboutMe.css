@@ -48,7 +48,7 @@
     flex-wrap: wrap;
     justify-content: left;
     align-items: flex-start;
-    column-gap: 5%;
+    column-gap: 6%;
 }
 
 .ec-image {

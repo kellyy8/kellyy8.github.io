@@ -34,7 +34,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 0.5em;
+    padding: 0 0.25em;
     
     & :is(.text1, .text2, .text3){
         margin: 0;   
@@ -52,6 +52,10 @@
 
     & :is(.text2, .text3){
         text-align: right;
+    }
+
+    & :is(.text2){
+        font-weight: 600;
     }
 }
 

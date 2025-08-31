@@ -16,7 +16,7 @@ function ProjectCard(props : ProjectCardProps) {
         <div className="project-wrapper" onClick={props.handleShow}>
             <img className="project-logo" src={props.image} width="100%" height="auto"/>
             <div className="project-details-wrapper">
-                <p className="text1 number">{props.number && props.number < 10 ? '0' : ''}{props.number}</p>
+                <p className="text2 number">{props.number && props.number < 10 ? '0' : ''}{props.number}</p>
                 <div className="project-details">
                     <p className="text2">{props.title}</p>
                     <p className="text3">{props.tools}</p>
