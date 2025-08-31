@@ -55,15 +55,43 @@
     }
 }
 
-/* Modal styles */
+/** Modal styles **/
+.no-interaction {
+    pointer-events: none;
+}
+
+/* Wraps modal in a position: fixed container so that modal is always relative to the viewport. */
+.modal-portal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    pointer-events: none; /* only modal and overlay interactable */
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    pointer-events: auto;  /* Allow users to close the modal by clicking on overlay. */
+}
+
 .modal-wrapper {
-    /* Center the modal. */
-    position: absolute;
+    /* Center the modal relative to viewport's center. */
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 25%);
 
     width: 70%;
+    max-height: 100vh;
+    overflow-y: auto;  /* Allow users to scroll in modal if content is large. */
     pointer-events: auto;  /* Keep links & buttons in modal interactive. Background non-interactive. */
 
     /* Align items within the modal. */
@@ -121,19 +149,4 @@
     &:hover {
         transform: scale(1.2);
     }
-}
-
-.no-interaction {
-    pointer-events: none;
-}
-
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    
-    pointer-events: auto;  /* Allow users to close the modal by clicking on overlay. */
 }

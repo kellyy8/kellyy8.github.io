@@ -113,7 +113,7 @@ function Hobbies() {
             </div>
 
             {showModal && selectedGD &&
-                <>
+                <div className="gd-modal-portal">
                     <div className={showModal ? 'gd-modal-overlay' : ''} onClick={handleClose}></div>
                     <div className={showModal ? 'fade-in' : 'fade-out'}>
                         <GraphicDesignModal
@@ -121,7 +121,7 @@ function Hobbies() {
                             {...selectedGD}
                         />
                     </div>
-                </>
+                </div>
             }
 
             {/** Display for hobbies. */}

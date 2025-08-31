@@ -126,7 +126,7 @@ function Projects() {
             </div>
 
             {showModal && modalData && 
-                <>
+                <div className="modal-portal">
                     <div className={showModal ? 'modal-overlay' : ''} onClick={handleClose}></div>
                     <div className={showModal ? 'fade-in' : 'fade-out'}>
                         <ProjectModal
@@ -134,7 +134,7 @@ function Projects() {
                             {...modalData}
                         />
                     </div>
-                </>
+                </div>
             }
 
             <div className="project-card-container">

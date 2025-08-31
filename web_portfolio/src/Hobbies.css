@@ -51,24 +51,37 @@
     pointer-events: none;
 }
 
+/* Wraps modal in a position: fixed container so that modal is always relative to the viewport. */
+.gd-modal-portal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    pointer-events: none; /* only modal and overlay interactable */
+}
+
 .gd-modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     
     pointer-events: auto;  /* Allow users to close the modal by clicking on overlay. */
 }
 
 .gd-modal-wrapper {
-    /* TODO: Center the modal. Shouldn't have to scroll up to see modal. Modal scrolls with screen? */
-    position: absolute;
+    /* Center the modal relative to viewport's center. */
+    position: fixed;
     top: 50%;
     left: 50%;
-    width: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 25%);
+    
+    width: 40%;
+    max-height: 10vh;
 
     pointer-events: auto; /* Allows users to click X to close the modal. */
 }
