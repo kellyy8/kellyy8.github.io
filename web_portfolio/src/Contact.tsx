@@ -3,6 +3,8 @@ import { MdOutlineEmail } from "react-icons/md"
 import { SiLinkedin } from "react-icons/si"
 import { FaGithub } from "react-icons/fa"
 import { RiPresentationLine } from "react-icons/ri"
+import { IoDocumentTextOutline } from "react-icons/io5"
+import { FaPaintBrush } from "react-icons/fa";
 import { LargeFlowerLineArt  } from "./FlowerLineArt"
 import NavBar from "./NavBar"
 import "./Contact.css"
@@ -22,7 +24,11 @@ function Contact() {
                     </div>
                     <div className="contact-info-wrapper">
                         <SiLinkedin size="1.75em"/>
-                        <p className="text2"><Link className="link" target="_blank" to="">&nbsp;&nbsp;LinkedIn</Link></p>
+                        <p className="text2"><Link className="link" target="_blank" to="https://www.linkedin.com/in/kellyy8">&nbsp;&nbsp;&nbsp;LinkedIn</Link></p>
+                    </div>
+                    <div className="contact-info-wrapper">
+                        <IoDocumentTextOutline size="2em"/>
+                        <p className="text2"><Link className="link" target="_blank" to="https://drive.google.com/file/d/10ihn1amqzzKLQrpzU3WzWcL8ohkoe2Ji/view?usp=drive_link">&nbsp;&nbsp;Resume</Link></p>
                     </div>
                 </div>
 
@@ -33,16 +39,20 @@ function Contact() {
                 <div className="bottom-right">
                     <div className="contact-info-wrapper">
                         <FaGithub size="1.75em"/>
-                        <p className="text2"><Link className="link" target="_blank" to="">&nbsp;&nbsp;GitHub</Link></p>
+                        <p className="text2"><Link className="link" target="_blank" to="https://github.com/kellyy8">&nbsp;&nbsp;&nbsp;GitHub</Link></p>
                     </div>
                     <div className="contact-info-wrapper">
                         <RiPresentationLine size="2em"/>
-                        <p className="text2"><Link className="link" target="_blank" to="">&nbsp;&nbsp;Demo & Design Portfolio</Link></p>
+                        <p className="text2"><Link className="link" target="_blank" to="https://drive.google.com/drive/folders/1MsSPbVMadO5GhQgggH41bLYEewskS9_r?usp=sharing">&nbsp;&nbsp;Demos & Designs</Link></p>
+                    </div>
+                    <div className="contact-info-wrapper">
+                        <FaPaintBrush size="1.5em"/>
+                        <p className="text2"><Link className="link" target="_blank" to="https://drive.google.com/drive/folders/1xHOlPoJungIQ7dbahoarua8txx_tukyJ?usp=drive_link">&nbsp;&nbsp;&nbsp;&nbsp;Digital Art Portfolio</Link></p>
                     </div>
                 </div>
             </div>
 
-            <p className="text2 contact-footer">growth is a process&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p className="text2 contact-footer">&nbsp;growth is a process</p>
 
         </div>
     )
