@@ -96,3 +96,35 @@ export function SmallFlowerLineArt() {
     </motion.svg>
   );
 }
+
+/**
+ * Smallest static 5-petal flower line art. (used for nav bar's menu options)
+ */
+export function SmallestFlowerLineArt() {
+  const angles = [0, 72, 144, 216, 288];
+
+  return (
+    <svg
+      viewBox="0 0 200 200"
+      width="1.2em"
+      height="1.2em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {angles.map((angle) => (
+        <path
+          key={angle}
+          d="
+            M 100 100
+            C 120 60, 140 40, 100 10
+            C 60 40, 80 60, 100 100
+          "
+          fill="none"
+          stroke="#69896F"  // same as the dark green in design system
+          strokeWidth={16}
+          strokeLinecap="round"
+          transform={`rotate(${angle} 100 100)`}
+        />
+      ))}
+    </svg>
+  );
+}

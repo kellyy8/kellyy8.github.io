@@ -1,37 +1,32 @@
-/* To tilt the watering pot. */
-@keyframes left45 {
+.navbar-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.5em;
+
+    transition: transform 0.3s ease;
+    z-index: 1;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+@keyframes rightIn {
     0% {
-        transform: rotate(0deg);
+        transform: translate(25%);
     }
     100% {
-        transform: rotate(-45deg);
+        transform: translate(0%);
     }
 }
 
-@keyframes right45 {
+@keyframes rightOut {
     0% {
-        transform: rotate(-45deg);
+        transform: translate(0%);
     }
     100% {
-        transform: rotate(0deg);
-    }
-}
-
-.open-dropdown {
-    animation: left45 0.5s forwards;
-}
-
-.close-dropdown {
-    animation: right45 0.5s forwards;
-}
-
-/* To get dropdown to appear from the top-right corner of the screen. */
-@keyframes cornerIn {
-    0% {
-        transform: translate(25%, -25%)
-    }
-    100% {
-        transform: translate(0%)
+        transform: translate(25%);
     }
 }
 
@@ -41,15 +36,18 @@
     right: 0;
 
     width: 10%;
-    text-align: right;      /* Watering pot to the right. */
-    padding: 2em 2em 1em;
+    padding: 4em 2em 1em;
 
     /* Only add the backdrop when the dropdown is open. */
     &.open-wrapper {
-        animation: cornerIn 0.5s forwards;
+        animation: rightIn 0.5s forwards;
         border: solid 1px var(--sage-green);
         border-radius: 0 0 0 1em;
         background-color: var(--light-green);
+    }
+
+    &.close-wrapper {
+        animation: rightOut 0.5s forwards;
     }
 
     & .text2 {
@@ -58,12 +56,8 @@
     }
 }
 
-.wc {
-    transition: transform 0.3s ease;
-    opacity: 0.7;
-
-    &:hover{
-        opacity: 1;
-        cursor: pointer;
-    }
+.navbar-menu-option {
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
