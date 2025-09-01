@@ -1,9 +1,14 @@
+#home-page h1 {
+  margin-bottom: 0;
+}
+
 .links-container {
-  margin: 3em 0;
-  width: 60%;
-  justify-self: center;  /** Center links container horizontally across the screen. **/
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 5%;
+  width: 100%;
+  margin: 1.5em 0 0;
 }
 
 .link-card {

@@ -7,7 +7,7 @@ import "./App.css"
 function App() {
 
   return (
-    <div>
+    <div id="home-page">
       <NavBar />
 
       <h1>Hi, I'm Kelly!</h1>
