@@ -35,7 +35,7 @@ function ECCard({image, title, role, link} : ECCardProps) {
 
 function AboutMe() {
     return(
-        <>
+        <div id="about-me-page">
             <NavBar />
             
             <div className="page-header">
@@ -52,7 +52,7 @@ function AboutMe() {
                 </em>
             </p>
 
-            <div>
+            <div className="intro">
                 <div className="pic-words-pair">
                     <img className="headshot" src={headshot} width="200" height="auto"/>
                     <p className="text2">
@@ -134,7 +134,7 @@ function AboutMe() {
 
             <Footer />
 
-        </>
+        </div>
     )
 }
 

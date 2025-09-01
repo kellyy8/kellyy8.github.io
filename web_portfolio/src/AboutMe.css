@@ -8,6 +8,10 @@
     justify-content: space-between;
 }
 
+.intro {
+    margin-top: 2em;
+}
+
 .pic-words-pair {
     display: flex;
     flex-direction: row;
@@ -48,7 +52,7 @@
     flex-wrap: wrap;
     justify-content: left;
     align-items: flex-start;
-    column-gap: 6%;
+    column-gap: 5%;
 }
 
 .ec-image {
@@ -63,7 +67,7 @@
 }
 
 .ec-wrapper {
-    width: 20%;
+    width: 21%;
     text-align: center;
     margin-bottom: 3em;
     
