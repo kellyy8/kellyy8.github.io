@@ -1,5 +1,5 @@
-import {useState} from 'react'
-import {Link} from 'react-router-dom'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import wc from './assets/water_can_default.png'
 import './NavBar.css'
 

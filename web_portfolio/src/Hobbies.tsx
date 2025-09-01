@@ -1,6 +1,6 @@
-import {useState, useEffect} from "react"
+import { useState, useEffect } from "react"
+import { SmallFlowerLineArt } from "./FlowerLineArt"
 import { HobbyDetails, hobbyData } from "./data"
-import largeTulip from "../src/assets/large_tulip.png"
 import NavBar from './NavBar'
 import Footer from "./Footer"
 import "./Hobbies.css"
@@ -93,9 +93,9 @@ function Hobbies() {
             <NavBar />
             
             <div className="page-header">
-                <img src={largeTulip} width="7%" height="auto"/>
+                <SmallFlowerLineArt />
                 <h1>hobbies</h1>
-                <img src={largeTulip} width="7%" height="auto"/>
+                <SmallFlowerLineArt />
             </div>
             
             <p className="text2"><em>some cool things i created with some really cool people :)</em></p>

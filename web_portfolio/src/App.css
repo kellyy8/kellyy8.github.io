@@ -36,9 +36,53 @@
 
 /* Styles I added: */
 .links-container {
-  margin: 8em 0;
+  margin: 3em 0;
   width: 60%;
   justify-self: center;  /** Center links container horizontally across the screen. **/
   display: flex;
   justify-content: space-between;
+}
+
+.link-card {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+#aboutLink-image, #projectsLink-image, #hobbiesLink-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+}
+
+#aboutLink-image {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(253, 160, 98, 0.6) 10%,   /* strong center */
+    rgba(253, 160, 98, 0.3) 50%,   /* feather */
+    rgba(253, 160, 98, 0) 60%     /* fade to transparent */
+  );
+}
+
+#projectsLink-image {
+  background: radial-gradient(  /* pink */
+    ellipse at center,
+    rgba(236, 72, 153, 0.6) 10%,
+    rgba(236, 72, 153, 0.3) 50%,
+    rgba(236, 72, 153, 0) 60%
+  );
+}
+
+#hobbiesLink-image {
+  background: radial-gradient(  /* purple */
+    ellipse at center,
+    rgba(150, 123, 182, 0.6) 10%,
+    rgba(150, 123, 182, 0.3) 50%,
+    rgba(150, 123, 182, 0) 60%
+  );
 }

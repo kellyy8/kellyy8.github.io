@@ -1,5 +1,5 @@
-import {Link} from "react-router-dom"
-import largeTulip from "../src/assets/large_tulip.png"
+import { Link } from "react-router-dom"
+import { LargeFlowerLineArt } from "./FlowerLineArt"
 import NavBar from "./NavBar"
 import Footer from "./Footer"
 import "./App.css"
@@ -18,21 +18,27 @@ function App() {
       </h2>
 
       <div className="links-container">
-        <div>
+        <div className="link-card">
           <Link id="aboutLink" to="/about">
-            <img src={largeTulip} alt="Tulip." height="120"/>  {/** TODO: Add hover state to tulips! */}
+            <div id="aboutLink-image">
+              <LargeFlowerLineArt palette={["#fb923c", "#fdba74"]}/>
+            </div>
             <p className="text1">about me</p>
           </Link>
         </div>
-        <div>
+        <div className="link-card">
           <Link id="projectsLink" to="/projects">
-            <img src={largeTulip} alt="Tulip." height="120"/>
+            <div id="projectsLink-image">
+              <LargeFlowerLineArt palette={["#f9a8d4", "#fbcfe8"]}/>
+            </div>
             <p className="text1">projects</p>
           </Link>
         </div>
-        <div>
+        <div className="link-card">
           <Link id="hobbiesLink" to="/hobbies">
-            <img src={largeTulip} alt="Tulip." height="120"/>
+            <div id="hobbiesLink-image">
+              <LargeFlowerLineArt palette={["#8b5cf6", "#a78bfa"]}/>
+            </div>
             <p className="text1">hobbies</p>
           </Link>
         </div>

@@ -1,7 +1,7 @@
 import headshot from './assets/headshot.jpg'
 import dance from './assets/dance.png'
 import web_dev from './assets/web_dev.png'
-import largeTulip from './assets/large_tulip.png'
+import { SmallFlowerLineArt } from "./FlowerLineArt"
 import { ExtracurricularDetails, professionalExtracurricularData, creativeExtracurricularData } from './data'
 import NavBar from './NavBar'
 import Footer from './Footer'
@@ -10,11 +10,11 @@ import './AboutMe.css'
 function Divider() {
     return(
         <div className="divider-wrapper">
-            <img src={largeTulip} width="60" height="auto"/>
-            <img src={largeTulip} width="60" height="auto"/>
-            <img src={largeTulip} width="60" height="auto"/>
-            <img src={largeTulip} width="60" height="auto"/>
-            <img src={largeTulip} width="60" height="auto"/>
+            <SmallFlowerLineArt />
+            <SmallFlowerLineArt />
+            <SmallFlowerLineArt />
+            <SmallFlowerLineArt />
+            <SmallFlowerLineArt />
         </div>
     )
 }
@@ -39,9 +39,9 @@ function AboutMe() {
             <NavBar />
             
             <div className="page-header">
-                <img src={largeTulip} width="7%" height="auto"/>
+                <SmallFlowerLineArt />
                 <h1>about me</h1>
-                <img src={largeTulip} width="7%" height="auto"/>
+                <SmallFlowerLineArt />
             </div>
 
             <p className="text2">
