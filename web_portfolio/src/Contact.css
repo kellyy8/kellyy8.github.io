@@ -1,0 +1,41 @@
+.contact-title {
+    font-size: 64px;
+    margin: 0.5em 0 1em;
+}
+
+.contact-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8%;
+    width: 80%;
+}
+
+.contact-info-wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.link-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+  
+    &.contact {
+      background: radial-gradient(
+        ellipse at center,
+        rgba(105, 137, 111, 0.6) 10%,
+        rgba(105, 137, 111, 0.3) 50%,
+        rgba(105, 137, 111, 0) 60%
+      );
+    }
+}
+
+.contact-footer {
+    position: absolute;
+    bottom: 50px;
+}

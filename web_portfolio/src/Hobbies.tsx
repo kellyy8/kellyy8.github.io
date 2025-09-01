@@ -9,8 +9,8 @@ type HobbyFilter = "dance" | "graphic design" | "videography"
 
 // For graphic design category only.
 type GraphicDesignProps = HobbyDetails & {
-    handleShow? : any;
-    handleClose? : any;
+    handleShow? : any
+    handleClose? : any
 }
 
 function GraphicDesignCard({title, image, handleShow} : GraphicDesignProps) {

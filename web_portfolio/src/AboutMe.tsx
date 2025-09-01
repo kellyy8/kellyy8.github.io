@@ -1,11 +1,11 @@
-import headshot from './assets/headshot.jpg'
-import dance from './assets/dance.png'
-import web_dev from './assets/web_dev.png'
+import headshot from "./assets/headshot.jpg"
+import dance from "./assets/dance.png"
+import web_dev from "./assets/web_dev.png"
 import { SmallFlowerLineArt } from "./FlowerLineArt"
-import { ExtracurricularDetails, professionalExtracurricularData, creativeExtracurricularData } from './data'
-import NavBar from './NavBar'
-import Footer from './Footer'
-import './AboutMe.css'
+import { ExtracurricularDetails, professionalExtracurricularData, creativeExtracurricularData } from "./data"
+import NavBar from "./NavBar"
+import Footer from "./Footer"
+import "./AboutMe.css"
 
 function Divider() {
     return(
@@ -24,7 +24,7 @@ type ECCardProps = ExtracurricularDetails
 function ECCard({image, title, role, link} : ECCardProps) {
     return(
         <div className="ec-wrapper">
-            <a href={link} target='_blank'>
+            <a href={link} target="_blank">
                 <img className="ec-image" src={image} width="80%" height="auto"/>
             </a>
             <p className="text2"><strong>{title}</strong></p>

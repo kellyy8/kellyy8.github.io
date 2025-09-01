@@ -1,59 +1,59 @@
 // Images for projects
-import PocketStudio from '../src/assets/logos_projects/pocket_studio.png';
-import BruinPause from '../src/assets/logos_projects/bruin_pause.png';
-import BrewinHappiness from '../src/assets/logos_projects/brewin_happiness.png';
-import BruinMarketplace from '../src/assets/logos_projects/bruin_marketplace.png';
-import Sigmax from '../src/assets/logos_projects/sigmax.png';
-import AugmentedReality from '../src/assets/logos_projects/ar.png';
-import WebBanner from '../src/assets/logos_projects/web_banner.png';
-import Chatbot from '../src/assets/logos_projects/chatbot.png';
-import TheHill from '../src/assets/logos_projects/the_hill.png';
-import OnTheDot from '../src/assets/logos_projects/on_the_dot.png';
-import SuperPeachSisters from '../src/assets/logos_projects/super_peach_sisters.png';
-import VitalMotion from '../src/assets/logos_projects/vital_motion.png';
+import PocketStudio from "../src/assets/logos_projects/pocket_studio.png"
+import BruinPause from "../src/assets/logos_projects/bruin_pause.png"
+import BrewinHappiness from "../src/assets/logos_projects/brewin_happiness.png"
+import BruinMarketplace from "../src/assets/logos_projects/bruin_marketplace.png"
+import Sigmax from "../src/assets/logos_projects/sigmax.png"
+import AugmentedReality from "../src/assets/logos_projects/ar.png"
+import WebBanner from "../src/assets/logos_projects/web_banner.png"
+import Chatbot from "../src/assets/logos_projects/chatbot.png"
+import TheHill from "../src/assets/logos_projects/the_hill.png"
+import OnTheDot from "../src/assets/logos_projects/on_the_dot.png"
+import SuperPeachSisters from "../src/assets/logos_projects/super_peach_sisters.png"
+import VitalMotion from "../src/assets/logos_projects/vital_motion.png"
 
 // Images for graphic design
-import quote1 from '../src/assets/gd/1.jpg';
-import quote2 from '../src/assets/gd/2.jpg';
-import quote3 from '../src/assets/gd/3.jpg';
-import quote4 from '../src/assets/gd/4.jpg';
-import quote5 from '../src/assets/gd/5.jpg';
-import quote6 from '../src/assets/gd/6.jpg';
-import quote7 from '../src/assets/gd/7.jpg';
-import quote8 from '../src/assets/gd/8.jpg';
-import quote9 from '../src/assets/gd/9.jpg';
-import quote10 from '../src/assets/gd/10.jpg';
-import quote11 from '../src/assets/gd/11.jpg';
-import quote12 from '../src/assets/gd/12.jpg';
-import quote13 from '../src/assets/gd/13.jpg';
-import aca from '../src/assets/gd/play_a_card_game.jpg';
-import week4_ig from '../src/assets/gd/week4_ig.png';
-import week5_ig from '../src/assets/gd/week5_ig.png';
-import week10_ig from '../src/assets/gd/week10_ig.png';
+import quote1 from "../src/assets/gd/1.jpg"
+import quote2 from "../src/assets/gd/2.jpg"
+import quote3 from "../src/assets/gd/3.jpg"
+import quote4 from "../src/assets/gd/4.jpg"
+import quote5 from "../src/assets/gd/5.jpg"
+import quote6 from "../src/assets/gd/6.jpg"
+import quote7 from "../src/assets/gd/7.jpg"
+import quote8 from "../src/assets/gd/8.jpg"
+import quote9 from "../src/assets/gd/9.jpg"
+import quote10 from "../src/assets/gd/10.jpg"
+import quote11 from "../src/assets/gd/11.jpg"
+import quote12 from "../src/assets/gd/12.jpg"
+import quote13 from "../src/assets/gd/13.jpg"
+import aca from "../src/assets/gd/play_a_card_game.jpg"
+import week4_ig from "../src/assets/gd/week4_ig.png"
+import week5_ig from "../src/assets/gd/week5_ig.png"
+import week10_ig from "../src/assets/gd/week10_ig.png"
 
 // Images for extracurriculars
-import acaallday from '../src/assets/logos_ec/acaallday.png';
-import acabruins from '../src/assets/logos_ec/acabruins.png';
-import bc from '../src/assets/logos_ec/bc.png';
-import be from '../src/assets/logos_ec/bruin_entrepreneurs.png';
-import cp from '../src/assets/logos_ec/codepath.png'
-import dfg from '../src/assets/logos_ec/dfg.png'
-import fc from '../src/assets/logos_ec/fc.png';
-import treehacks from '../src/assets/logos_ec/treehacks.png';
-import lahacks from '../src/assets/logos_ec/lahacks.png';
-import swe from '../src/assets/logos_ec/swe.png';
-import tt from '../src/assets/logos_ec/tt.png';
-import upe from '../src/assets/logos_ec/upe.png';
+import acaallday from "../src/assets/logos_ec/acaallday.png"
+import acabruins from "../src/assets/logos_ec/acabruins.png"
+import bc from "../src/assets/logos_ec/bc.png"
+import be from "../src/assets/logos_ec/bruin_entrepreneurs.png"
+import cp from "../src/assets/logos_ec/codepath.png"
+import dfg from "../src/assets/logos_ec/dfg.png"
+import fc from "../src/assets/logos_ec/fc.png"
+import treehacks from "../src/assets/logos_ec/treehacks.png"
+import lahacks from "../src/assets/logos_ec/lahacks.png"
+import swe from "../src/assets/logos_ec/swe.png"
+import tt from "../src/assets/logos_ec/tt.png"
+import upe from "../src/assets/logos_ec/upe.png"
 
 export type ProjectDetails = {
-    category: string;
-    subcategory?: string;
-    image: any;
-    title: string;
-    role: string;
-    tools: string;
-    description: string;
-    links: Array<Array<string>>; // links: [{Figma: 'Figma'}, {GitHub: 'GitHub'}, {Demo: 'Demo'}],
+    category: string
+    subcategory?: string
+    image: any
+    title: string
+    role: string
+    tools: string
+    description: string
+    links: Array<Array<string>> // links: [{Figma: 'Figma'}, {GitHub: 'GitHub'}, {Demo: 'Demo'}],
 }
 
 /* Expore an array of data about each project. */
@@ -196,10 +196,10 @@ export const projectData : Array<ProjectDetails> = [
 ]
 
 export type HobbyDetails = {
-    category: string;
-    title: string;
-    image?: any;        /** For graphic design */
-    link?: string;      /** For dance and videography */
+    category: string
+    title: string
+    image?: any        /** For graphic design */
+    link?: string      /** For dance and videography */
 }
 
 export const hobbyData : Array<HobbyDetails> = [
@@ -371,10 +371,10 @@ export const hobbyData : Array<HobbyDetails> = [
 ]
 
 export type ExtracurricularDetails = {
-    image: any;
-    title: string;
-    role: string;
-    link: string;
+    image: any
+    title: string
+    role: string
+    link: string
 }
 
 export const professionalExtracurricularData : Array<ExtracurricularDetails> = [

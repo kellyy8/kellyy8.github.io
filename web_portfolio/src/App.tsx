@@ -19,24 +19,24 @@ function App() {
 
       <div className="links-container">
         <div className="link-card">
-          <Link id="aboutLink" to="/about">
-            <div id="aboutLink-image">
+          <Link className="link" to="/about">
+            <div className="link-background about">
               <LargeFlowerLineArt palette={["#fb923c", "#fdba74"]}/>
             </div>
             <p className="text1">about me</p>
           </Link>
         </div>
         <div className="link-card">
-          <Link id="projectsLink" to="/projects">
-            <div id="projectsLink-image">
+          <Link className="link" to="/projects">
+            <div className="link-background projects">
               <LargeFlowerLineArt palette={["#f9a8d4", "#fbcfe8"]}/>
             </div>
             <p className="text1">projects</p>
           </Link>
         </div>
         <div className="link-card">
-          <Link id="hobbiesLink" to="/hobbies">
-            <div id="hobbiesLink-image">
+          <Link className="link" to="/hobbies">
+            <div className="link-background hobbies">
               <LargeFlowerLineArt palette={["#8b5cf6", "#a78bfa"]}/>
             </div>
             <p className="text1">hobbies</p>

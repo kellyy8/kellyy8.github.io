@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 
 /**
  * 5-petal flower line art: [LARGE]
@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
  * - flower slowly rotates left and right
  */
 export function LargeFlowerLineArt({palette} : {palette: string[]}) {
-  const angles = [0, 72, 144, 216, 288];
+  const angles = [0, 72, 144, 216, 288]
 
   return (
     <motion.svg
@@ -45,7 +45,7 @@ export function LargeFlowerLineArt({palette} : {palette: string[]}) {
         />
       ))}
     </motion.svg>
-  );
+  )
 }
 
 /**
@@ -54,8 +54,8 @@ export function LargeFlowerLineArt({palette} : {palette: string[]}) {
  * - flower slowly rotates left and right around its own center
  */
 export function SmallFlowerLineArt() {
-  const angles = [0, 72, 144, 216, 288];
-  const palette = ["#69896F"];  // same as the dark green in design system
+  const angles = [0, 72, 144, 216, 288]
+  const palette = ["#69896F"]  // same as the dark green in design system
 
   return (
     <motion.svg
@@ -94,14 +94,14 @@ export function SmallFlowerLineArt() {
         />
       ))}
     </motion.svg>
-  );
+  )
 }
 
 /**
  * Smallest static 5-petal flower line art. (used for nav bar's menu options)
  */
 export function SmallestFlowerLineArt() {
-  const angles = [0, 72, 144, 216, 288];
+  const angles = [0, 72, 144, 216, 288]
 
   return (
     <svg
@@ -126,5 +126,5 @@ export function SmallestFlowerLineArt() {
         />
       ))}
     </svg>
-  );
+  )
 }

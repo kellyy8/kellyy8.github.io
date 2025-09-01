@@ -1,9 +1,9 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { LuMenu } from "react-icons/lu";
-import { IoClose } from "react-icons/io5";
+import { useState } from "react"
+import { Link } from "react-router-dom"
+import { LuMenu } from "react-icons/lu"
+import { IoClose } from "react-icons/io5"
 import { SmallestFlowerLineArt } from "./FlowerLineArt"
-import './NavBar.css'
+import "./NavBar.css"
 
 function NavBar() {
     const [showDropdown, setShowDropdown] = useState<boolean>(false)
@@ -22,19 +22,23 @@ function NavBar() {
                     <nav>
                         <div className="navbar-menu-option">
                             <SmallestFlowerLineArt />
-                            <p className="text2"><Link id="homeLink" to="/">&nbsp;&nbsp;home</Link></p>
+                            <p className="text2"><Link className="link" to="/">&nbsp;&nbsp;home</Link></p>
                         </div>
                         <div className="navbar-menu-option">
                             <SmallestFlowerLineArt />
-                            <p className="text2"><Link id="aboutLink" to="/about">&nbsp;&nbsp;about me</Link></p>
+                            <p className="text2"><Link className="link" to="/about">&nbsp;&nbsp;about me</Link></p>
                         </div>
                         <div className="navbar-menu-option">
                             <SmallestFlowerLineArt />
-                            <p className="text2"><Link id="projectsLink" to="/projects">&nbsp;&nbsp;projects</Link></p>
+                            <p className="text2"><Link className="link" to="/projects">&nbsp;&nbsp;projects</Link></p>
                         </div>
                         <div className="navbar-menu-option">
                             <SmallestFlowerLineArt />
-                            <p className="text2"><Link id="hobbiesLink" to="/hobbies">&nbsp;&nbsp;hobbies</Link></p>
+                            <p className="text2"><Link className="link" to="/hobbies">&nbsp;&nbsp;hobbies</Link></p>
+                        </div>
+                        <div className="navbar-menu-option">
+                            <SmallestFlowerLineArt />
+                            <p className="text2"><Link className="link" to="/contact">&nbsp;&nbsp;contact</Link></p>
                         </div>
                     </nav>
                 </div>
