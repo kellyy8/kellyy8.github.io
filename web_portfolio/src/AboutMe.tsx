@@ -94,7 +94,7 @@ function AboutMe() {
                     <a href="https://www.linkedin.com/in/kellyy8/" target="_blank">LinkedIn</a> &nbsp; | &nbsp;
                     <a href="https://github.com/kellyy8" target="_blank">GitHub</a> &nbsp; | &nbsp;
                     <a href="https://tinyurl.com/Kelly-Yu-Design-Portfolio" target="_blank">Design Portfolio</a> &nbsp; | &nbsp;
-                    <a href="https://drive.google.com/file/d/10ihn1amqzzKLQrpzU3WzWcL8ohkoe2Ji/view?usp=drive_link" target="_blank">Resume</a>
+                    <a href="https://drive.google.com/file/d/1xd3M4M9vLbCd1wyE8UAigmBwymnvf_TT/view?usp=drive_link" target="_blank">Resume</a>
                 </p>
 
                 <div className="skill-list-pair">

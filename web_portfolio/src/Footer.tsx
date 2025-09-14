@@ -13,7 +13,7 @@ function Footer() {
                     <a href="https://github.com/kellyy8" target="_blank"><FaGithub size="2em"/></a>
                 </div>
                 <div className="icon">
-                    <a href="https://drive.google.com/drive/folders/1MsSPbVMadO5GhQgggH41bLYEewskS9_r?usp=sharing" target="_blank"><RiPresentationLine size="2.25em"/></a>
+                    <a href="https://drive.google.com/file/d/1xd3M4M9vLbCd1wyE8UAigmBwymnvf_TT/view?usp=drive_link" target="_blank"><RiPresentationLine size="2.25em"/></a>
                 </div>
             </div>
             <p className="text2">growth is a process</p>

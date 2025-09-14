@@ -28,7 +28,7 @@ function Contact() {
                     </div>
                     <div className="contact-info-wrapper">
                         <IoDocumentTextOutline size="2em"/>
-                        <p className="text2"><Link className="link" target="_blank" to="https://drive.google.com/file/d/10ihn1amqzzKLQrpzU3WzWcL8ohkoe2Ji/view?usp=drive_link">&nbsp;&nbsp;Resume</Link></p>
+                        <p className="text2"><Link className="link" target="_blank" to="https://drive.google.com/file/d/1xd3M4M9vLbCd1wyE8UAigmBwymnvf_TT/view?usp=drive_link">&nbsp;&nbsp;Resume</Link></p>
                     </div>
                 </div>
 
