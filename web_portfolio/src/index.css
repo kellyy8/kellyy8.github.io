@@ -6,7 +6,7 @@
   min-height: 60vh;
 }
 
-#home-page {
+#home-page, #projects-page, #hobbies-page, #about-me-page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,6 +149,7 @@ button:focus-visible {
 .filter-panel {
   width: 80%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   justify-self: center;
@@ -233,12 +234,13 @@ button:focus-visible {
 
 .page-header {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-end;
   column-gap: 4%;
   margin: 1em 0 0;
+  width: 100%;
 
   & h1 {
     margin: 0;

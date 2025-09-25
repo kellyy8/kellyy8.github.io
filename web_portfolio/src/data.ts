@@ -298,16 +298,16 @@ export const hobbyData : Array<HobbyDetails> = [
         title: "LSHIP Set [FRONT VIEW] || Supernova: Foundations Choreography Spring 2024 Exhibition",
         link: "https://www.youtube.com/embed/Wt6Mk7rmTzA?si=4IwZ8wqcydEdNZ3H",
     },
-    {
-        category: 'Dance',
-        title: "ACA [WIDE VIEW] || Resurgence 2023 [@VIBRVNCY 4k]",
-        link: "https://www.youtube.com/embed/la12pLEXvKw?si=ZI6eJ-FQOLiBRHf4",
-    },
-    {
-        category: 'Dance',
-        title: "ACA [FRONT VIEW] || Resurgence 2023 [@VIBRVNCY 4k]",
-        link: "https://www.youtube.com/embed/FfaZ7bYxWmY?si=1t_nS0PJ_JPTeBm0",
-    },
+    // {
+    //     category: 'Dance',
+    //     title: "ACA [WIDE VIEW] || Resurgence 2023 [@VIBRVNCY 4k]",
+    //     link: "https://www.youtube.com/embed/la12pLEXvKw?si=ZI6eJ-FQOLiBRHf4",
+    // },
+    // {
+    //     category: 'Dance',
+    //     title: "ACA [FRONT VIEW] || Resurgence 2023 [@VIBRVNCY 4k]",
+    //     link: "https://www.youtube.com/embed/FfaZ7bYxWmY?si=1t_nS0PJ_JPTeBm0",
+    // },
     {
         category: 'Dance',
         title: "ACA [WIDE VIEW] || Prelude NorCal 2023",

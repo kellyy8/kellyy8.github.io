@@ -89,7 +89,7 @@ function Hobbies() {
     }, [showModal])
 
     return(
-        <>
+        <div id="hobbies-page">
             <NavBar />
             
             <div className="page-header">
@@ -148,7 +148,7 @@ function Hobbies() {
 
             <Footer />
             
-        </>
+        </div>
     )
 }
 

@@ -1,9 +1,6 @@
 .project-card-container {
     width: 90%;
     margin: 2em 0;
-    justify-self: center;
-
-    /* border: solid 1px var(--dark-green); */
     
     display: flex;
     flex-wrap: wrap;
@@ -73,6 +70,7 @@
     height: 100vh;
     z-index: 1;
     pointer-events: none; /* only modal and overlay interactable */
+    overflow-y: auto;  /* Allow users to scroll in modal if content is large. */
 }
 
 .modal-overlay {
@@ -95,7 +93,6 @@
 
     width: 70%;
     max-height: 100vh;
-    overflow-y: auto;  /* Allow users to scroll in modal if content is large. */
     pointer-events: auto;  /* Keep links & buttons in modal interactive. Background non-interactive. */
 
     /* Align items within the modal. */

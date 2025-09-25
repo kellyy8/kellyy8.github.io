@@ -103,7 +103,7 @@ function Projects() {
     }, [showModal])
 
     return (
-        <>
+        <div id="projects-page">
             <NavBar />
 
             <div className="page-header">
@@ -149,7 +149,7 @@ function Projects() {
             </div>
 
             <Footer />
-        </>
+        </div>
     )
 }
 

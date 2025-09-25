@@ -58,6 +58,7 @@
 
 .navbar-menu-option {
     display: flex;
+    flex-wrap: wrap;
     justify-content: left;
     align-items: center;
 }
