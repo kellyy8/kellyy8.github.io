@@ -30,7 +30,7 @@ function NavBar() {
                         </div>
                         <div className="navbar-menu-option">
                             <SmallestFlowerLineArt />
-                            <p className="text2"><Link className="link" to="/projects">&nbsp;&nbsp;projects</Link></p>
+                            <p className="text2"><Link className="link" to="/experience">&nbsp;&nbsp;experience</Link></p>
                         </div>
                         <div className="navbar-menu-option">
                             <SmallestFlowerLineArt />

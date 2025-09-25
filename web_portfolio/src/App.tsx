@@ -27,11 +27,11 @@ function App() {
           </Link>
         </div>
         <div className="link-card">
-          <Link className="link" to="/projects">
+          <Link className="link" to="/experience">
             <div className="link-background projects">
               <LargeFlowerLineArt palette={["#f9a8d4", "#fbcfe8"]}/>
             </div>
-            <p className="text1">projects</p>
+            <p className="text1">experience</p>
           </Link>
         </div>
         <div className="link-card">

@@ -46,26 +46,28 @@ function ProjectModal(props : ProjectCardProps) {
                     <p className="modal-details-label">Overview:</p>
                     <p className="modal-details-content">{props.description}</p>
                 </div>
-                <div className="modal-details-pair">
-                    <p className="modal-details-label">More Info:</p>
-                    <div className="modal-details-content">
-                        {props.links && props.links.map((item, index) => 
-                            <>
-                                <a href={item[1]} key={index} target="_blank">{item[0]}</a>
-                                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                            </>
-                        )}
+                {props.links && 
+                    <div className="modal-details-pair">
+                        <p className="modal-details-label">More Info:</p>
+                        <div className="modal-details-content">
+                            {props.links && props.links.map((item, index) => 
+                                <>
+                                    <a href={item[1]} key={index} target="_blank">{item[0]}</a>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                </>
+                            )}
+                        </div>
                     </div>
-                </div>
+                }
             </div>
         </div>
     )
 }
 
-type ProjectFilter = "all" | "software development" | "ui/ux design" | "data analysis"
+type ProjectFilter = "all" | "software development" | "ai/ml" | "ui/ux design" | "data analysis"
 
 function Projects() {
-    const allFilters : Array<ProjectFilter> = ["all", "software development", "ui/ux design", "data analysis"]
+    const allFilters : Array<ProjectFilter> = ["all", "software development", "ai/ml", "ui/ux design", "data analysis"]
     const [selectedFilter, setSelectedFilter] = useState<ProjectFilter>("all")
 
     const [display, setDisplay] = useState<Array<ProjectDetails>>(projectData)
@@ -108,7 +110,7 @@ function Projects() {
 
             <div className="page-header">
                 <SmallFlowerLineArt />
-                <h1>projects</h1>
+                <h1>experience</h1>
                 <SmallFlowerLineArt />
             </div>
             <p className="text2"><em>some fun projects i worked on :)</em></p>

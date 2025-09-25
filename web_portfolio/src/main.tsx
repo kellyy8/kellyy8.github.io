@@ -15,7 +15,7 @@ createRoot(document.getElementById("root")!).render(
         {/* <Route path="/" element={<NavBar />}> */}
           <Route index={true} path="/" element={<App />} />
           <Route index={false} path="/about" element={<AboutMe />} />
-          <Route index={false} path="/projects" element={<Projects />} />
+          <Route index={false} path="/experience" element={<Projects />} />
           <Route index={false} path="/hobbies" element={<Hobbies />} />
           <Route index={false} path="/contact" element={<Contact />} />
         {/* </Route> */}
